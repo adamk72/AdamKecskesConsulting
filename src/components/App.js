@@ -1,9 +1,16 @@
 import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Aside from './Aside';
+import Main from './Main';
 
 function App() {
   return (
-    <div>
-      <h1>Adam Kecskes Consulting</h1>
+    <div className='grid-container'>
+      <Header />
+      <Main />
+      <Aside />
+      <Footer />
     </div>
   );
 }
