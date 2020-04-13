@@ -6,12 +6,19 @@ import Container from '@material-ui/core/Container';
 
 import useStyles from '../hooks/styles';
 
+import Navigation from './Navigation';
 import Header from './Header';
 import HeroUnit from './HeroUnit';
 import Footer from './Footer';
+import Aside from './Aside';
 import ContentCard from './ContentCard';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sections = [
+  { title: 'Blog', url: '#' },
+  { title: 'Projects', url: '#' },
+  { title: 'About', url: '#' },
+];
 
 export default function App() {
   const classes = useStyles();
@@ -20,6 +27,7 @@ export default function App() {
     <React.Fragment>
       <CssBaseline />
       <Header />
+      <Navigation title='Adam Kecskes Consulting' sections={sections} />
       <main>
         <HeroUnit />
         <Container className={classes.cardGrid} maxWidth='md'>
@@ -31,6 +39,7 @@ export default function App() {
             ))}
           </Grid>
         </Container>
+        <Aside />
       </main>
       <Footer />
     </React.Fragment>

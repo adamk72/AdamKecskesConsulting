@@ -3,9 +3,11 @@ import Grid from '@material-ui/core/Grid';
 
 const Aside = () => {
   return (
-    <Grid item md={4}>
-      <div>Aside</div>
-    </Grid>
+    <aside>
+      <Grid item md={4}>
+        <div>Aside</div>
+      </Grid>
+    </aside>
   );
 };
 
