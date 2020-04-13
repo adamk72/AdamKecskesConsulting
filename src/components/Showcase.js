@@ -5,10 +5,10 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
-const HeroUnit = () => {
+const Showcase = () => {
   const classes = useStyles();
   return (
-    <div className={classes.heroContent}>
+    <div className={classes.showcaseContent}>
       <Container maxWidth='sm'>
         <Typography
           component='h1'
@@ -24,7 +24,7 @@ const HeroUnit = () => {
           the creator, etc. Make it short and sweet, but not too short so folks
           don&apos;t simply skip over it entirely.
         </Typography>
-        <div className={classes.heroButtons}>
+        <div className={classes.showcaseButtons}>
           <Grid container spacing={2} justify='center'>
             <Grid item>
               <Button variant='contained' color='primary'>
@@ -43,4 +43,4 @@ const HeroUnit = () => {
   );
 };
 
-export default HeroUnit;
+export default Showcase;

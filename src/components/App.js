@@ -8,10 +8,10 @@ import useStyles from '../hooks/styles';
 
 import Navigation from './Navigation';
 import Header from './Header';
-import HeroUnit from './HeroUnit';
 import Footer from './Footer';
 import Aside from './Aside';
 import ContentCard from './ContentCard';
+import Showcase from './Showcase';
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sections = [
@@ -29,7 +29,7 @@ export default function App() {
       <Header />
       <Navigation title='Adam Kecskes Consulting' sections={sections} />
       <main>
-        <HeroUnit />
+        <Showcase />
         <Container className={classes.cardGrid} maxWidth='md'>
           <Grid container spacing={4}>
             {cards.map((card) => (
