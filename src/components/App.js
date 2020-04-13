@@ -88,13 +88,6 @@ export default function App() {
           ))}
         </Grid>
         <Container className={classes.cardGrid} maxWidth='md'>
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <ContentCard />
-              </Grid>
-            ))}
-          </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
             <Main title='From the firehose' posts={posts} />
             <Aside
