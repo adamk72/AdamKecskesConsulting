@@ -13,6 +13,16 @@ import Aside from './Aside';
 import ContentCard from './ContentCard';
 import Showcase from './Showcase';
 import Feature from './Feature';
+import Main from './Main';
+
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+
+import post1 from '../blog-post.1.md';
+import post2 from '../blog-post.2.md';
+import post3 from '../blog-post.3.md';
+const posts = [post1, post2, post3];
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sections = [
@@ -38,6 +48,29 @@ const featuredPosts = [
     imageText: 'Image Text',
   },
 ];
+const sidebar = {
+  title: 'About',
+  description:
+    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
+  archives: [
+    { title: 'March 2020', url: '#' },
+    { title: 'February 2020', url: '#' },
+    { title: 'January 2020', url: '#' },
+    { title: 'November 1999', url: '#' },
+    { title: 'October 1999', url: '#' },
+    { title: 'September 1999', url: '#' },
+    { title: 'August 1999', url: '#' },
+    { title: 'July 1999', url: '#' },
+    { title: 'June 1999', url: '#' },
+    { title: 'May 1999', url: '#' },
+    { title: 'April 1999', url: '#' },
+  ],
+  social: [
+    { name: 'GitHub', icon: GitHubIcon },
+    { name: 'Twitter', icon: TwitterIcon },
+    { name: 'Facebook', icon: FacebookIcon },
+  ],
+};
 
 export default function App() {
   const classes = useStyles();
@@ -62,8 +95,16 @@ export default function App() {
               </Grid>
             ))}
           </Grid>
+          <Grid container spacing={5} className={classes.mainGrid}>
+            <Main title='From the firehose' posts={posts} />
+            <Aside
+              title={sidebar.title}
+              description={sidebar.description}
+              archives={sidebar.archives}
+              social={sidebar.social}
+            />
+          </Grid>
         </Container>
-        <Aside />
       </main>
       <Footer />
     </React.Fragment>
