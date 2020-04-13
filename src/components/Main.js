@@ -23,11 +23,13 @@ export default function Main(props) {
         {title}
       </Typography>
       <Divider />
-      {posts.map((post) => (
-        <Markdown className={classes.markdown} key={post.substring(0, 40)}>
-          {post}
-        </Markdown>
-      ))}
+      {posts.map((post, index) => {
+        return (
+          <Markdown className={classes.markdown} key={index}>
+            {post}
+          </Markdown>
+        );
+      })}
     </Grid>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
@@ -10,7 +10,6 @@ import Navigation from './Navigation';
 import Header from './Header';
 import Footer from './Footer';
 import Aside from './Aside';
-import ContentCard from './ContentCard';
 import Showcase from './Showcase';
 import Feature from './Feature';
 import Main from './Main';
@@ -22,9 +21,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import post1 from '../blog-post.1.md';
 import post2 from '../blog-post.2.md';
 import post3 from '../blog-post.3.md';
-const posts = [post1, post2, post3];
+const rawMdPosts = [post1, post2, post3];
 
-const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sections = [
   { title: 'Blog', url: '#' },
   { title: 'Projects', url: '#' },
@@ -74,6 +72,31 @@ const sidebar = {
 
 export default function App() {
   const classes = useStyles();
+  const [posts, setPosts] = useState([]);
+  const [doneWithPosts, setDoneWithPosts] = useState(false);
+
+  const fetchPosts = useCallback(() => {
+    if (!doneWithPosts) {
+      fetch(rawMdPosts[posts.length])
+        .then((response) => {
+          if (response.ok) {
+            return response.text();
+          } else return Promise.reject("Didn't fetch text correctly");
+        })
+        .then((text) => {
+          if (posts.length === rawMdPosts.length - 1) {
+            setDoneWithPosts((d) => (d = true));
+          } else {
+            setPosts([...posts, text]);
+          }
+        })
+        .catch((error) => console.error(error));
+    }
+  }, [posts, doneWithPosts]);
+
+  useEffect(() => {
+    fetchPosts();
+  }, [fetchPosts]);
 
   return (
     <React.Fragment>
