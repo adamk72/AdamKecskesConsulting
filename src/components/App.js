@@ -7,7 +7,6 @@ import Container from '@material-ui/core/Container';
 import useStyles from '../hooks/useStyles';
 
 import Navigation from './Navigation';
-import Header from './Header';
 import Footer from './Footer';
 import Aside from './Aside';
 import Showcase from './Showcase';
@@ -32,7 +31,7 @@ const sections = [
 const mainFeaturedPost = {
   title: 'Title of a longer featured blog post',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
   image: 'https://source.unsplash.com/random',
   imgText: 'main image description',
   linkText: 'Continue reading…',
