@@ -112,8 +112,7 @@ export default function App() {
     <React.Fragment>
       <Container maxWidth='lg'>
         <CssBaseline />
-        <Header />
-        <Navigation title='Navigation' sections={sections} />
+        <Navigation title='Adam Kecskes Consulting' sections={sections} />
         <main>
           <Showcase post={mainFeaturedPost} />
           <Callout />
