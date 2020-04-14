@@ -3,29 +3,29 @@ import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
+import CardMedia from '@material-ui/core/CardMedia';
 import useStyles from '../hooks/useStyles';
 
 export default function Showcase(props) {
   const classes = useStyles();
-  const { post } = props;
+  const { titles } = props;
 
   return (
     <Paper
       className={classes.showcase}
-      style={{ backgroundImage: `url(${post.image})` }}
+      // style={{ backgroundImage: `url(${post.image})` }}
     >
-      {/* Increase the priority of the hero background image */}
-      {
-        <img
-          style={{ display: 'none' }}
-          src={post.image}
-          alt={post.imageText}
-        />
-      }
-      <div className={classes.overlay} />
-      <Grid container>
+      <div />
+      <Grid container spacing={0} direction='row' justify='space-evenly'>
         <Grid item md={6}>
+          <CardMedia
+            className={classes.cardMedia}
+            component='img'
+            image='images/mrs_mcquaries_chair_sydney_australia.jpg'
+            title='Image title'
+          />
+        </Grid>
+        <Grid item md={4}>
           <div className={classes.showcaseContent}>
             <Typography
               component='h1'
@@ -33,14 +33,14 @@ export default function Showcase(props) {
               color='inherit'
               gutterBottom
             >
-              {post.title}
+              {titles.map((title) => (
+                <>
+                  <span className='showcaseTitle'>{title}</span>
+                  <br />
+                  <br />
+                </>
+              ))}
             </Typography>
-            <Typography variant='h5' color='inherit' paragraph>
-              {post.description}
-            </Typography>
-            <Link variant='subtitle1' href='#'>
-              {post.linkText}
-            </Link>
           </div>
         </Grid>
       </Grid>

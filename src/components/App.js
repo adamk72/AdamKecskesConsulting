@@ -28,14 +28,11 @@ const sections = [
   { title: 'Projects', url: '#' },
   { title: 'About', url: '#' },
 ];
-const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
-  description:
-    "Multiple lines of text that form the lead, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
-  imgText: 'main image description',
-  linkText: 'Continue reading…',
-};
+const titles = [
+  'Operational Optimzer',
+  'Software Architect',
+  'Systems Improvement Manager',
+];
 
 const featuredPosts = [
   {
@@ -113,7 +110,7 @@ export default function App() {
         <CssBaseline />
         <Navigation title='Adam Kecskes Consulting' sections={sections} />
         <main>
-          <Showcase post={mainFeaturedPost} />
+          <Showcase titles={titles} />
           <Callout />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (

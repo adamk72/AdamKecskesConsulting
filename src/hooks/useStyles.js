@@ -5,16 +5,15 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: `1px solid ${theme.palette.divider}`,
   },
   toolbarTitle: {
-    fontFamily: 'Roboto+Slab',
     flex: 1,
   },
   toolbarSecondary: {
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     overflowX: 'auto',
   },
   toolbarLink: {
     padding: theme.spacing(1),
-    flexShrink: 0,
+    flexShrink: 1,
   },
   asideAboutBox: {
     padding: theme.spacing(2),
@@ -36,24 +35,11 @@ const useStyles = makeStyles((theme) => ({
   cardDetails: {
     flex: 1,
   },
-  cardMedia: {
-    width: 160,
-  },
+  cardMedia: {},
   footer: {
     backgroundColor: theme.palette.background.paper,
     marginTop: theme.spacing(8),
     padding: theme.spacing(6, 0),
-  },
-  showcase: {
-    position: 'relative',
-    backgroundColor: theme.palette.grey[800],
-    color: theme.palette.common.white,
-    marginBottom: theme.spacing(4),
-    backgroundImage: 'url(https://source.unsplash.com/random)',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    fontFamily: 'Montserrat',
   },
   overlay: {
     position: 'absolute',
@@ -63,13 +49,23 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     backgroundColor: 'rgba(0,0,0,.3)',
   },
+  showcase: {
+    position: 'relative',
+    marginBottom: theme.spacing(4),
+    marginTop: theme.spacing(4),
+    backgroundImage:
+      'url(https://www.transparenttextures.com/patterns/subtle-carbon.pn)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+  },
   showcaseContent: {
     position: 'relative',
     padding: theme.spacing(3),
-    [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(6),
-      paddingRight: 0,
-    },
+    // [theme.breakpoints.up('md')]: {
+    //   padding: theme.spacing(2),
+    //   paddingRight: 0,
+    // },
   },
   icon: {
     marginRight: theme.spacing(2),
