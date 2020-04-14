@@ -35,9 +35,9 @@ export default function Showcase(props) {
             >
               {titles.map((title) => (
                 <>
-                  <span className='showcaseTitle'>{title}</span>
-                  <br />
-                  <br />
+                  <span className='showcaseTitle'>
+                    <p>{title}</p>
+                  </span>
                 </>
               ))}
             </Typography>

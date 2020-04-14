@@ -3,5 +3,10 @@
 }
 .showcaseTitle {
   font-family: 'Permanent Marker';
+  font-size: 3rem;
   font-style: italic;
+}
+.showcaseTitle p {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
