@@ -1,6 +1,7 @@
 import React from 'react';
+import SimpleCard from './SimpleCard';
 
-import { Grid, Header, Image, Segment } from 'semantic-ui-react';
+import { Grid, Image, Segment } from 'semantic-ui-react';
 
 const Testimonials = (props) => {
   return (
@@ -8,21 +9,16 @@ const Testimonials = (props) => {
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "What a Company"
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              That is what they all say about us
-            </p>
+            <SimpleCard
+              title='What a Company'
+              body='That is what they all say about us'
+            />
           </Grid.Column>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
+            <SimpleCard title="I shouldn't have gone with their competitor.">
               <Image avatar src='/images/avatar/large/nan.jpg' />
               <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
+            </SimpleCard>
           </Grid.Column>
         </Grid.Row>
       </Grid>

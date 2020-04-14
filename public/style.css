@@ -4,9 +4,25 @@
 .showcaseTitle {
   font-family: 'Permanent Marker';
   font-size: 3rem;
-  font-style: italic;
 }
 .showcaseTitle p {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+body #root h3 {
+  font-family: 'Roboto Slab';
+  font-size: 2em;
+}
+
+.simplecard p {
+  font-size: 1.33em;
+}
+
+.simplecard {
+  margin-top: 4em;
+}
+
+.top {
+  margin-top: 2em;
 }
