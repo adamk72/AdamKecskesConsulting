@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import useStyles from '../hooks/useStyles';
+import useStyles from '../../hooks/useStyles';
 
 const Header = ({ title }) => {
   const classes = useStyles();

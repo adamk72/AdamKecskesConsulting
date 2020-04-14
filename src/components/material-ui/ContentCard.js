@@ -5,7 +5,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import useStyles from '../hooks/useStyles';
+import useStyles from '../../hooks/useStyles';
 
 const ContentCard = () => {
   const classes = useStyles();
