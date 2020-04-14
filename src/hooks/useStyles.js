@@ -5,6 +5,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: `1px solid ${theme.palette.divider}`,
   },
   toolbarTitle: {
+    fontFamily: 'Roboto+Slab',
     flex: 1,
   },
   toolbarSecondary: {
@@ -52,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
+    fontFamily: 'Montserrat',
   },
   overlay: {
     position: 'absolute',
