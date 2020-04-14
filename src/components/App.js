@@ -11,6 +11,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Aside from './Aside';
 import Showcase from './Showcase';
+import Callout from './Callout';
 import Feature from './Feature';
 import Main from './Main';
 
@@ -115,6 +116,7 @@ export default function App() {
         <Navigation title='Navigation' sections={sections} />
         <main>
           <Showcase post={mainFeaturedPost} />
+          <Callout />
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <Feature key={post.title} post={post} />

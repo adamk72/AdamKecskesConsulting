@@ -5,7 +5,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
-const Showcase2 = () => {
+const Callout = () => {
   const classes = useStyles();
   return (
     <div className={classes.showcaseContent}>
@@ -17,7 +17,7 @@ const Showcase2 = () => {
           color='textPrimary'
           gutterBottom
         >
-          Showcase Type 2
+          Callout
         </Typography>
         <Typography variant='h5' align='center' color='textSecondary' paragraph>
           Something short and leading about the collection below—its contents,
@@ -43,4 +43,4 @@ const Showcase2 = () => {
   );
 };
 
-export default Showcase2;
+export default Callout;
