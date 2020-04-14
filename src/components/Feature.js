@@ -8,18 +8,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Hidden from '@material-ui/core/Hidden';
-
-const useStyles = makeStyles({
-  card: {
-    display: 'flex',
-  },
-  cardDetails: {
-    flex: 1,
-  },
-  cardMedia: {
-    width: 160,
-  },
-});
+import useStyles from '../hooks/useStyles';
 
 export default function Feature(props) {
   const classes = useStyles();

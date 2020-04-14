@@ -5,13 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import Markdown from './Markdown';
-
-const useStyles = makeStyles((theme) => ({
-  markdown: {
-    ...theme.typography.body2,
-    padding: theme.spacing(3, 0),
-  },
-}));
+import useStyles from '../hooks/useStyles';
 
 export default function Main(props) {
   const classes = useStyles();

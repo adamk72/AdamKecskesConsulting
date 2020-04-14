@@ -1,20 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-
-const useStyles = makeStyles((theme) => ({
-  asideAboutBox: {
-    padding: theme.spacing(2),
-    backgroundColor: theme.palette.grey[200],
-  },
-  asideSection: {
-    marginTop: theme.spacing(3),
-  },
-}));
+import useStyles from '../hooks/useStyles';
 
 export default function Aside(props) {
   const classes = useStyles();

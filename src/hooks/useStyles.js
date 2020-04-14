@@ -1,6 +1,27 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
+  toolbar: {
+    borderBottom: `1px solid ${theme.palette.divider}`,
+  },
+  toolbarTitle: {
+    flex: 1,
+  },
+  toolbarSecondary: {
+    justifyContent: 'space-between',
+    overflowX: 'auto',
+  },
+  toolbarLink: {
+    padding: theme.spacing(1),
+    flexShrink: 0,
+  },
+  asideAboutBox: {
+    padding: theme.spacing(2),
+    backgroundColor: theme.palette.grey[200],
+  },
+  asideSection: {
+    marginTop: theme.spacing(3),
+  },
   mainGrid: {
     marginTop: theme.spacing(3),
   },
