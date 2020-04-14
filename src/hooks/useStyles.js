@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
   showcaseContent: {
     position: 'relative',
     padding: theme.spacing(3),
+    marginTop: theme.spacing(4),
     // [theme.breakpoints.up('md')]: {
     //   padding: theme.spacing(2),
     //   paddingRight: 0,

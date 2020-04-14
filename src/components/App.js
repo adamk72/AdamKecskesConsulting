@@ -29,9 +29,9 @@ const sections = [
   { title: 'About', url: '#' },
 ];
 const titles = [
-  'Operational Optimzer',
+  'Operational Optimizer',
   'Software Architect',
-  'Systems Improvement Manager',
+  'Entropy Manager',
 ];
 
 const featuredPosts = [
