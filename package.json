@@ -9,18 +9,25 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bulma": "^0.8.2",
+    "graceful-fs": "^4.2.3",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
     "markdown-to-jsx": "^6.11.1",
+    "minimatch": "^3.0.4",
+    "natives": "^1.1.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.2"
+    "semantic-ui-react": "^0.88.2",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preinstall": "npx npm-force-resolutions"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +43,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamk72/AdamKecskesConsulting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamk72/AdamKecskesConsulting/issues"
+  },
+  "homepage": "https://github.com/adamk72/AdamKecskesConsulting#readme"
 }

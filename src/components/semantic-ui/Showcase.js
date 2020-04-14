@@ -4,7 +4,7 @@ import { Button, Grid, Header, Image, Segment } from 'semantic-ui-react';
 
 const Showcase = (props) => {
   return (
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '4em 4em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column floated='left' width={6}>
