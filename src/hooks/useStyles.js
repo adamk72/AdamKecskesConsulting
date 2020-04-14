@@ -69,9 +69,6 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: 0,
     },
   },
-  listItem: {
-    marginTop: theme.spacing(1),
-  },
   icon: {
     marginRight: theme.spacing(2),
   },
