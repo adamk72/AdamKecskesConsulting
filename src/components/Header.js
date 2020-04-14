@@ -3,9 +3,9 @@ import AppBar from '@material-ui/core/AppBar';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import useStyles from '../hooks/styles';
+import useStyles from '../hooks/useStyles';
 
-const MainAppBar = () => {
+const Header = () => {
   const classes = useStyles();
   return (
     <header>
@@ -13,7 +13,7 @@ const MainAppBar = () => {
         <Toolbar>
           <CameraIcon className={classes.icon} />
           <Typography variant='h6' color='inherit' noWrap>
-            Album layout
+            Header
           </Typography>
         </Toolbar>
       </AppBar>
@@ -21,4 +21,4 @@ const MainAppBar = () => {
   );
 };
 
-export default MainAppBar;
+export default Header;

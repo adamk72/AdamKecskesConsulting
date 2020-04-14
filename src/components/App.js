@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 
-import useStyles from '../hooks/styles';
+import useStyles from '../hooks/useStyles';
 
 import Navigation from './Navigation';
 import Header from './Header';
@@ -28,6 +28,15 @@ const sections = [
   { title: 'Projects', url: '#' },
   { title: 'About', url: '#' },
 ];
+const mainFeaturedPost = {
+  title: 'Title of a longer featured blog post',
+  description:
+    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+  image: 'https://source.unsplash.com/random',
+  imgText: 'main image description',
+  linkText: 'Continue reading…',
+};
+
 const featuredPosts = [
   {
     title: 'Featured post',
@@ -100,17 +109,17 @@ export default function App() {
 
   return (
     <React.Fragment>
-      <CssBaseline />
-      <Header />
-      <Navigation title='Adam Kecskes Consulting' sections={sections} />
-      <main>
-        <Showcase />
-        <Grid container spacing={4}>
-          {featuredPosts.map((post) => (
-            <Feature key={post.title} post={post} />
-          ))}
-        </Grid>
-        <Container className={classes.cardGrid} maxWidth='md'>
+      <Container maxWidth='lg'>
+        <CssBaseline />
+        <Header />
+        <Navigation title='Navigation' sections={sections} />
+        <main>
+          <Showcase post={mainFeaturedPost} />
+          <Grid container spacing={4}>
+            {featuredPosts.map((post) => (
+              <Feature key={post.title} post={post} />
+            ))}
+          </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
             <Main title='From the firehose' posts={posts} />
             <Aside
@@ -120,9 +129,9 @@ export default function App() {
               social={sidebar.social}
             />
           </Grid>
-        </Container>
-      </main>
-      <Footer />
+        </main>
+        <Footer />
+      </Container>
     </React.Fragment>
   );
 }
