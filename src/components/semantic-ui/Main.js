@@ -14,11 +14,7 @@ const Main = (props) => {
         how to master the art of doing nothing by providing massive amounts of
         whitespace and generic content that can seem massive, monolithic and
         worth your attention.'
-        >
-          <Button as='a' size='large'>
-            Read More
-          </Button>
-        </SimpleCard>
+        ></SimpleCard>
 
         <SegmentDivider margin='3em 0em'>
           <a href='http://kecskes.net'>Case Studies</a>
@@ -29,11 +25,7 @@ const Main = (props) => {
           body="Yes I know you probably disregarded the earlier boasts as non-sequitur
         filler content, but it's really true. It took years of gene splicing
         and combinatory DNA research, but our bananas can really dance."
-        >
-          <Button as='a' size='large'>
-            I'm Still Quite Interested
-          </Button>
-        </SimpleCard>
+        ></SimpleCard>
       </Container>
     </Segment>
   );

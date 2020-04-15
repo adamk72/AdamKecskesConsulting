@@ -39,11 +39,6 @@ const Showcase = (props) => {
             <SimpleCard body="... and so much more. Most importantly, I'm here to help your company overcome a range of problems." />
           </Grid.Column>
         </Grid.Row>
-        {/* <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
-        </Grid.Row> */}
       </Grid>
     </Segment>
   );
