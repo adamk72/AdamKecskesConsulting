@@ -1,19 +1,15 @@
 import React from 'react';
 import ResponsiveContainer from './ResponsiveContainer';
 import Showcase from './Showcase';
-import Testimonials from './Testimonials';
 import Footer from './Footer';
 import Main from './Main';
 import SegmentDivider from './SegmentDivider';
 
 const Homepage = () => (
   <ResponsiveContainer>
-    <SegmentDivider />
+    <SegmentDivider>Who is &hellip; ?</SegmentDivider>
     <Showcase />
-    <SegmentDivider />
-
-    <Testimonials />
-    <SegmentDivider />
+    <SegmentDivider>I'm a Problem Solver&hellip;</SegmentDivider>
     <Main />
     <SegmentDivider />
     <Footer />

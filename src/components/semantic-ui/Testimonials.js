@@ -1,7 +1,8 @@
 import React from 'react';
 import SimpleCard from './SimpleCard';
+import { List } from 'semantic-ui-react';
 
-import { Grid, Image, Segment } from 'semantic-ui-react';
+import { Grid, Segment } from 'semantic-ui-react';
 
 const Testimonials = (props) => {
   return (
@@ -9,16 +10,19 @@ const Testimonials = (props) => {
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <SimpleCard
-              title='What a Company'
-              body='That is what they all say about us'
-            />
+            <SimpleCard title='What I Offer:' />
           </Grid.Column>
+
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <SimpleCard title="I shouldn't have gone with their competitor.">
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </SimpleCard>
+            <List relaxed size='huge'>
+              <List.Item>Server &amp; Client Software Development</List.Item>
+              <List.Item>Product Lifecycle Managment </List.Item>
+              <List.Item>Program Management</List.Item>
+              <List.Item>Process Improvement</List.Item>
+              <List.Item>Optimizing Operations</List.Item>
+              <List.Item>UX/UI Design Implementation</List.Item>
+              <List.Item>Technical Staffing</List.Item>
+            </List>
           </Grid.Column>
         </Grid.Row>
       </Grid>
