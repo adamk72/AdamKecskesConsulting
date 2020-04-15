@@ -25,38 +25,38 @@ const Main = (props) => {
         <List relaxed size='huge'>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Server &amp; Client Software Development
           </List.Item>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             UX/UI Design Implementation
           </List.Item>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Product Lifecycle Management{' '}
           </List.Item>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Optimizing Operations
           </List.Item>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Program Management
           </List.Item>
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Process Improvement
           </List.Item>
 
           <List.Item>
             {' '}
-            <Icon name='right triangle' />
+            <Icon name='chevron right' />
             Technical Staffing
           </List.Item>
         </List>

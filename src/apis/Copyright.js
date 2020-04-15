@@ -1,17 +1,12 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+import SimpleCard from '../components/semantic-ui/SimpleCard';
 
 function Copyright() {
   return (
-    <Typography variant='body2' color='textSecondary' align='center'>
-      {'Copyright © '}
-      <Link color='inherit' href='https://kecskes.net/'>
-        Adam Kecskes
-      </Link>{' '}
-      {new Date().getFullYear()}
+    <SimpleCard>
+      Copyright © Adam Kecskes {new Date().getFullYear()}
       {'.'}
-    </Typography>
+    </SimpleCard>
   );
 }
 
