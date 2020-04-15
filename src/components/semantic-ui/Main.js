@@ -2,13 +2,13 @@ import React from 'react';
 import SimpleCard from './SimpleCard';
 
 import { Button, Segment, Container, Divider } from 'semantic-ui-react';
+import SegmentDivider from './SegmentDivider';
 
 const Main = (props) => {
   return (
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment basic style={{ padding: '3.5em 0em' }} vertical>
       <Container text>
         <SimpleCard
-          className='top'
           title='Breaking The Grid, Grabs Your Attention'
           body='Instead of focusing on content creation and hard work, we have learned
         how to master the art of doing nothing by providing massive amounts of
@@ -20,14 +20,10 @@ const Main = (props) => {
           </Button>
         </SimpleCard>
 
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
+        <SegmentDivider margin='3em 0em'>
           <a href='http://kecskes.net'>Case Studies</a>
-        </Divider>
+        </SegmentDivider>
+
         <SimpleCard
           title='Did We Tell You About Our Bananas?'
           body="Yes I know you probably disregarded the earlier boasts as non-sequitur

@@ -48,11 +48,11 @@ class MobileContainer extends Component {
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
           <Segment
+            basic
             inverted
             textAlign='center'
             style={{ minHeight: 350, padding: '1em 0em' }}
             vertical
-            color='blue'
           >
             <Container>
               <Menu inverted pointing secondary size='large'>

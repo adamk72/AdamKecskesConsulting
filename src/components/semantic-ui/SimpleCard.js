@@ -6,13 +6,13 @@ const SimpleCard = ({
   indent,
   title,
   body,
-  className,
+  className = null,
   children,
   marker = null,
 }) => {
   return (
     <div
-      className={className + ' simplecard'}
+      className={className ? className + ' simplecard' : 'simplecard'}
       style={{ textIndent: indent ? indent : null }}
     >
       <Header as='h3'>

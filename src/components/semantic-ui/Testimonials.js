@@ -5,7 +5,7 @@ import { Grid, Image, Segment } from 'semantic-ui-react';
 
 const Testimonials = (props) => {
   return (
-    <Segment style={{ padding: '0em' }} vertical>
+    <Segment basic style={{ padding: '3em' }} vertical>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>

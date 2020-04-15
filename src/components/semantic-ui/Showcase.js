@@ -5,7 +5,7 @@ import { Card, Grid, Image, Segment } from 'semantic-ui-react';
 
 const Showcase = (props) => {
   return (
-    <Segment className='showcase' style={{ padding: '4em 4em' }} vertical>
+    <Segment basic className='showcase' style={{ padding: '4em 4em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column floated='left' width={8}>

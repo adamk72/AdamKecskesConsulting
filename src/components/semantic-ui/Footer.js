@@ -4,7 +4,7 @@ import { Grid, Header, Segment, Container, List } from 'semantic-ui-react';
 
 const Footer = (props) => {
   return (
-    <Segment vertical style={{ padding: '5em 0em' }} color='blue'>
+    <Segment basic vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided stackable>
           <Grid.Row>
