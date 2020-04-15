@@ -9,6 +9,7 @@ ReactDOM.render(
   <Router>
     <Route path='/' exact component={Homepage} />
     <Route path='/portfolio' component={Portfoliopage} />
+    <Route path='/work' component={Portfoliopage} />
   </Router>,
 
   document.getElementById('root')

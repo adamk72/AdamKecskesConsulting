@@ -6,6 +6,7 @@
   --contrast-color: #9cb3dc;
   --text-color: whitesmoke;
 }
+
 body #root,
 body #root .ui.menu {
   background-color: var(--secondary-color);
