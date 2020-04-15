@@ -36,7 +36,7 @@ const Main = (props) => {
           <List.Item>
             {' '}
             <Icon name='right triangle' />
-            Product Lifecycle Managment{' '}
+            Product Lifecycle Management{' '}
           </List.Item>
           <List.Item>
             {' '}
