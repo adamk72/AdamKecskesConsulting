@@ -50,8 +50,10 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>
-                  <Link to='/portfolio'>Code Portfolio</Link>
+                <Menu.Item>
+                  <Link className='reactLink' to='/portfolio'>
+                    Code Portfolio
+                  </Link>
                 </Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item>

@@ -29,6 +29,15 @@ body #root .ui.largeCard {
   width: 500px;
 }
 
+body #root .ui.menu .item .reactLink {
+  /* So that it will match the semantic ui style */
+  position: relative;
+  vertical-align: middle;
+  line-height: 1;
+  flex: 0 0 auto;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .simplecard p {
   font-size: 1.33em;
 }
