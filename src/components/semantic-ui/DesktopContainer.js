@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import HomepageHeading from './HomepageHeading';
 import getWidth from '../../apis/getWidth';
+import { Link } from 'react-router-dom';
 import {
   Button,
   Container,
@@ -49,7 +50,9 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
+                <Menu.Item as='a'>
+                  <Link to='/portfolio'>Code Portfolio</Link>
+                </Menu.Item>
                 <Menu.Item as='a'>Company</Menu.Item>
                 <Menu.Item as='a'>Careers</Menu.Item>
                 <Menu.Item position='right'>
