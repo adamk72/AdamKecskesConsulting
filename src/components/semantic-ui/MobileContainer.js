@@ -31,7 +31,6 @@ class MobileContainer extends Component {
         <Sidebar
           as={Menu}
           animation='push'
-          inverted
           onHide={this.handleSidebarHide}
           vertical
           visible={sidebarOpened}
@@ -49,7 +48,6 @@ class MobileContainer extends Component {
         <Sidebar.Pusher dimmed={sidebarOpened}>
           <Segment
             basic
-            inverted
             textAlign='center'
             style={{ minHeight: 350, padding: '1em 0em' }}
             vertical
