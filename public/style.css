@@ -1,18 +1,31 @@
-.navigation {
-  font-family: 'Roboto Slab';
+:root {
+  --primary-color: #2185d0;
+  --secondary-color: #1a58e8;
+  --royal-color: #1820de;
+  --highlight-color: #dee5f3;
+  --contrast-color: #9cb3dc;
+  --text-color: whitesmoke;
 }
-.showcaseTitle {
-  font-family: 'Permanent Marker';
-  font-size: 3rem;
-}
-.showcaseTitle p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+body #root {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
-body #root h3 {
+body #root h3.ui.header {
   font-family: 'Roboto Slab';
   font-size: 2em;
+}
+
+body #root h1.ui.header,
+body #root h2.ui.header,
+body #root h3.ui.header,
+body #root h4.ui.header,
+body #root a {
+  color: var(--text-color);
+}
+
+body #root .ui.largeCard {
+  width: 500px;
 }
 
 .simplecard p {
@@ -24,5 +37,5 @@ body #root h3 {
 }
 
 .top {
-  margin-top: 2em;
+  margin-top: -2em;
 }

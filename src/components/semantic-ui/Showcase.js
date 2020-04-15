@@ -1,34 +1,42 @@
 import React from 'react';
 import SimpleCard from './SimpleCard';
 
-import { Grid, Image, Segment } from 'semantic-ui-react';
+import { Card, Grid, Image, Segment } from 'semantic-ui-react';
 
 const Showcase = (props) => {
   return (
     <Segment className='showcase' style={{ padding: '4em 4em' }} vertical>
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column floated='left' width={6}>
-            <Image
-              bordered
-              rounded
-              size='large'
-              src='/images/mrs_mcquaries_chair_sydney_australia.jpg'
-            />
+          <Grid.Column floated='left' width={8}>
+            <Card centered raised ui className='largeCard'>
+              <Image
+                src='/images/mrs_mcquaries_chair_sydney_australia.jpg'
+                wrapped
+                ui={false}
+                fluid
+              />
+              <Card.Content>
+                <Card.Header>Adam Kecskes</Card.Header>
+                <Card.Description>
+                  <span style={{ fontStyle: 'italic' }}>
+                    My last name is pronounced 'kes-kes'; the 'c' is silent for
+                    good luck.
+                  </span>
+                </Card.Description>
+              </Card.Content>
+            </Card>
           </Grid.Column>
           <Grid.Column width={8}>
             <SimpleCard
               className='top'
-              title='We Help Companies and Companions'
-              body='We can give your company superpowers to do things that they never
-            thought possible. Let us delight your customers and empower your
-            needs... through pure data analytics.'
+              body="Hi! I'm Adam Kecskes, and I've done a lot to help companies thrive over the 20 years of my career in tecnology. Here's how I consider myself; I'm a:"
             />
-            <SimpleCard
-              title='We Make Bananas That Can Dance'
-              body="Yes that's right, you thought it was the stuff of dreams, but even
-              bananas can be bioengineered."
-            />
+            <SimpleCard marker indent={'3em'} title='Software Architect' />
+            <SimpleCard marker indent={'3em'} title='Operational Optimizer' />
+            <SimpleCard marker indent={'3em'} title='Agile Leader' />
+            <SimpleCard marker indent={'3em'} title='Team Player' />
+            <SimpleCard body="... and so much more. Most importantly, I'm here to help your company overcome a range of problems." />
           </Grid.Column>
         </Grid.Row>
         {/* <Grid.Row>

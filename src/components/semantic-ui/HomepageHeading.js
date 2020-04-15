@@ -10,7 +10,6 @@ const HomepageHeading = ({ mobile }) => (
     <Header
       as='h1'
       content='Adam Kecskes Consulting'
-      inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
@@ -22,7 +21,6 @@ const HomepageHeading = ({ mobile }) => (
     <Header
       as='h2'
       content='Software, Systems, &amp; Service'
-      inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
