@@ -37,6 +37,7 @@ class DesktopContainer extends Component {
             textAlign='center'
             style={{ minHeight: '700', padding: '1em 0em 6em' }}
             vertical
+            color='blue'
           >
             <Menu
               fixed={fixed ? 'top' : null}

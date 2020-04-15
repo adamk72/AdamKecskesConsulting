@@ -52,6 +52,7 @@ class MobileContainer extends Component {
             textAlign='center'
             style={{ minHeight: 350, padding: '1em 0em' }}
             vertical
+            color='blue'
           >
             <Container>
               <Menu inverted pointing secondary size='large'>
