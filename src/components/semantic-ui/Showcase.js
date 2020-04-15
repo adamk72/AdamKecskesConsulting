@@ -9,7 +9,7 @@ const Showcase = (props) => {
       <Grid container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column floated='left' width={8}>
-            <Card centered raised ui className='largeCard'>
+            <Card centered raised className='largeCard'>
               <Image
                 src='/images/mrs_mcquaries_chair_sydney_australia.jpg'
                 wrapped

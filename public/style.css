@@ -17,6 +17,10 @@ body #root h3.ui.header {
   font-size: 2em;
 }
 
+body #root .mainMenuItem:hover {
+  border-bottom: 2px solid var(--highlight-color);
+}
+
 body #root h1.ui.header,
 body #root h2.ui.header,
 body #root h3.ui.header,

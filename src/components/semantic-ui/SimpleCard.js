@@ -16,7 +16,6 @@ const SimpleCard = ({
       style={{ textIndent: indent ? indent : null }}
     >
       <Header as='h3'>
-        {console.log(marker)}
         <span
           style={{
             fontFamily: marker ? 'Montserrat Alternates' : null,

@@ -47,18 +47,15 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as='a' active>
-                  <Link className='reactLink' to='/'>
-                    Home
-                  </Link>
+                <Menu.Item className='mainMenuItem'>
+                  <Link to='/'>Home</Link>
                 </Menu.Item>
-                <Menu.Item>
-                  <Link className='reactLink' to='/portfolio'>
-                    Code Portfolio
-                  </Link>
+                <Menu.Item className='mainMenuItem'>
+                  <Link to='/portfolio'>Code Portfolio</Link>
                 </Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item className='mainMenuItem'>
+                  <Link to='/work'>Work Experiences</Link>
+                </Menu.Item>
                 <Menu.Item position='right'>
                   <Button as='a' inverted>
                     Log in
