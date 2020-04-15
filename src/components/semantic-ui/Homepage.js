@@ -3,7 +3,7 @@ import ResponsiveContainer from './ResponsiveContainer';
 import Showcase from './Showcase';
 import Testimonials from './Testimonials';
 import Footer from './Footer';
-import Main from './MobileContainer';
+import Main from './Main';
 
 const Homepage = () => (
   <ResponsiveContainer>
