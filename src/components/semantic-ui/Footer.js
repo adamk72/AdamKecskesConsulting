@@ -25,7 +25,7 @@ const Footer = (props) => {
                     as='a'
                     href='mailto://adam@kecskes.net?subject=Business%20Inquiry%20from%20Website'
                     compact
-                    color='primary'
+                    inverted
                   >
                     <Icon name='mail' /> Email
                   </Button>
@@ -35,7 +35,7 @@ const Footer = (props) => {
                     as='a'
                     href='https://github.com/adamk72'
                     compact
-                    color='primary'
+                    inverted
                   >
                     <Icon name='github' /> GitHub
                   </Button>
@@ -43,21 +43,16 @@ const Footer = (props) => {
                 <List.Item>
                   <Button
                     as='a'
-                    href='https://linkedin.com/adamkecskes'
+                    href='https://linkedin.com/in/adamkecskes/'
                     compact
-                    color='primary'
+                    inverted
                   >
                     <Icon name='linkedin' />
                     LinkedIn
                   </Button>
                 </List.Item>
                 <List.Item>
-                  <Button
-                    as='a'
-                    href='tel://512-662-2969'
-                    compact
-                    color='primary'
-                  >
+                  <Button as='a' href='tel://512-662-2969' compact inverted>
                     <Icon name='phone' /> 512-662-2969
                   </Button>
                 </List.Item>
