@@ -15,7 +15,7 @@ const Workpage = () => {
       .then((text) => {
         setContent(text);
       });
-  });
+  }, []);
 
   useEffect(() => {
     fetchContent(importedContent);

@@ -4,7 +4,6 @@ import HomepageHeading from './HomepageHeading';
 import getWidth from '../../apis/getWidth';
 import MainMenuFragment from './MainMenuFragment';
 import {
-  Button,
   Container,
   Icon,
   Menu,
