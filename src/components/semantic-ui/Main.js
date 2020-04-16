@@ -7,14 +7,14 @@ import SegmentDivider from './SegmentDivider';
 import CircularSegment from './CircularSegment';
 
 const domains = [
-  'Server & Client Software Development',
+  'Server & Client Agile Software Development',
+  'Lean Product Lifecycle Management',
   'UX/UI Design Implementation',
-  'Product Lifecycle Management',
   'Optimizing Operations',
   'Program Management',
   'Process Improvement',
-  'Technical Staffing',
   'Quality Assurance',
+  'Technical Staffing',
 ];
 
 const Main = (props) => {
@@ -29,19 +29,19 @@ const Main = (props) => {
               </CircularSegment>
             </Grid.Column>
             <Grid.Column width={10}>
-              <SimpleCard className='top' title='What I Offer to Your Company'>
+              <SimpleCard className='top' title='I Ask a Lot of Questions'>
                 <p>
-                  I'm a natural problem solver; instead of putting up with the
-                  status quo, I'm always asking, 'What improvements can we make
-                  to make our efforts a little easier?
+                  I'm a troublesooter; instead of putting up with the status
+                  quo, I'm always asking, 'What improvements can we make to make
+                  our efforts a little easier?
                   <br />
                   <br />
                   As such, I've moved up to Director and VP positions at various
                   companies because that is were I can provide the greatest
                   level of service. However, I'm not afraid to dig into code,
-                  databases, or documentation when necessary. Often times the
-                  details reveal issues &mdash; and solutions &mdash; which will
-                  impact the entire organizations.
+                  databases, or documentation when necessary. Often times it's
+                  looking into the details that reveal issues &mdash; and
+                  solutions &mdash; which will impact the entire organization.
                 </p>
               </SimpleCard>
             </Grid.Column>
@@ -55,14 +55,17 @@ const Main = (props) => {
           </Grid.Row>
           <Grid.Row centered>
             <Grid.Column width={10} vertical>
-              <SimpleCard title='I Wear Multiple Hats' body=''>
+              <SimpleCard title='And I Can Fill Many Roles' body=''>
                 <p>
                   I've worked for 3 large cap companies and 3 startup companies
                   <br />
-                  all at various stages of maturity,&nbsp;&nbsp;giving me a wide
-                  range of
+                  all at various stages of maturity,&nbsp;&nbsp;giving me a
+                  broad scope
                   <br />
-                  business experiences. Some of the domains I've worked in:
+                  business opportunites to learn from.
+                  <br />
+                  <br />
+                  Some of the domains I've worked in:
                 </p>
               </SimpleCard>
               <List relaxed size='huge' style={{ marginLeft: '50px' }}>

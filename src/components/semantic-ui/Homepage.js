@@ -8,7 +8,7 @@ const Homepage = () => (
   <ResponsiveContainer>
     <SegmentDivider>Who is &hellip; ?</SegmentDivider>
     <Showcase />
-    <SegmentDivider>I'm a Problem Solver&hellip;</SegmentDivider>
+    <SegmentDivider>I'm a problem solver&hellip;</SegmentDivider>
     <Main />
     <SegmentDivider />
   </ResponsiveContainer>
