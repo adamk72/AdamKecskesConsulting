@@ -20,7 +20,7 @@ const domains = [
 const Main = (props) => {
   return (
     <Segment basic style={{ padding: '3.5em 0em' }} vertical>
-      <Container basic>
+      <Container>
         <Grid verticalAlign='middle'>
           <Grid.Row centered>
             <Grid.Column width={6}>
@@ -47,14 +47,14 @@ const Main = (props) => {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered>
-            <Grid.Column vertical>
+            <Grid.Column>
               <SegmentDivider margin='3em 0em'>
                 &hellip;With a Wide Range of Experiences
               </SegmentDivider>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered>
-            <Grid.Column width={10} vertical>
+            <Grid.Column width={10}>
               <SimpleCard title='And I Can Fill Many Roles' body=''>
                 <p>
                   I've worked for 3 large cap companies and 3 startup companies
@@ -81,7 +81,7 @@ const Main = (props) => {
               </List>
             </Grid.Column>
             <Grid.Column width={2}></Grid.Column>
-            <Grid.Column width={4} vertical>
+            <Grid.Column width={4}>
               <CircularSegment radius={256}>
                 <Image src='/images/flow.png' alt='' />
               </CircularSegment>
