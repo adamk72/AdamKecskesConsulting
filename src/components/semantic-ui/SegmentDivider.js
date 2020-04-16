@@ -1,7 +1,8 @@
 import React from 'react';
 import { Divider } from 'semantic-ui-react';
+const INIT_CHILD = String.fromCharCode(8943); // centered horizontal ellipsis
 
-const SegmentDivider = ({ children = '...', margin = '2em, 0em' }) => {
+const SegmentDivider = ({ children = INIT_CHILD, margin = '2em, 0em' }) => {
   return (
     <Divider
       as='h4'
