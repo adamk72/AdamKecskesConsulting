@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import HomepageHeading from './HomepageHeading';
+import MainSiteHeader from './MainSiteHeader';
 import getWidth from '../../apis/getWidth';
 import MainMenuFragment from './MainMenuFragment';
 import {
@@ -40,6 +40,7 @@ class MobileContainer extends Component {
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
           <Segment
+            id='main-site-header'
             basic
             textAlign='center'
             style={{ minHeight: 350, padding: '1em 0em' }}
@@ -52,7 +53,7 @@ class MobileContainer extends Component {
                 </Menu.Item>
               </Menu>
             </Container>
-            <HomepageHeading mobile />
+            <MainSiteHeader mobile />
           </Segment>
 
           {children}

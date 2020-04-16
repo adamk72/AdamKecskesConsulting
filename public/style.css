@@ -7,6 +7,18 @@
   --text-color: whitesmoke;
 }
 
+body #root #main-site-header {
+  background-color: var(--highlight-color);
+  color: var(--royal-color);
+}
+body #root #main-site-header h2,
+body #root #main-site-header h1 {
+  font-family: 'Roboto Slab';
+  font-weight: 'normal';
+  margin-bottom: 0;
+  color: var(--secondary-color);
+}
+
 body #root,
 body #root .ui.menu {
   background-color: var(--secondary-color);

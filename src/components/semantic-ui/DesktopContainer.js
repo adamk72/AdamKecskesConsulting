@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import HomepageHeading from './HomepageHeading';
+import MainSiteHeader from './MainSiteHeader';
 import getWidth from '../../apis/getWidth';
 import MainMenuFragment from './MainMenuFragment';
 import {
@@ -33,6 +33,7 @@ class DesktopContainer extends Component {
           onBottomPassedReverse={this.hideFixedMenu}
         >
           <Segment
+            id='main-site-header'
             basic
             textAlign='center'
             style={{ minHeight: '700', padding: '1em 0em 3em' }}
@@ -49,7 +50,7 @@ class DesktopContainer extends Component {
                 <MainMenuFragment />
               </Container>
             </Menu>
-            <HomepageHeading />
+            <MainSiteHeader />
           </Segment>
         </Visibility>
         {children}
