@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
-import Homepage from './components/semantic-ui/Homepage';
-import BasicMdPage from './components/semantic-ui/BasicMdPage';
+import Homepage from './components/Homepage';
+import BasicMdPage from './components/BasicMdPage';
 import workPageContent from '../src/content/blog-post.1.md';
 import portfolioPageContent from '../src/content/blog-post.2.md';
 

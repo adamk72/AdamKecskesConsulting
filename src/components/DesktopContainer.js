@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import MainSiteHeader from './MainSiteHeader';
-import getWidth from '../../apis/getWidth';
+import getWidth from '../apis/getWidth';
 import MainMenuFragment from './MainMenuFragment';
 import {
   Container,

@@ -10,7 +10,7 @@ import {
   List,
   Button,
 } from 'semantic-ui-react';
-import Copyright from '../../apis/Copyright';
+import Copyright from '../apis/Copyright';
 
 const Footer = (props) => {
   return (

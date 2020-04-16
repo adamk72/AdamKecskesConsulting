@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ResponsiveContainer from './ResponsiveContainer';
-import Markdown from '../../apis/Markdown';
+import Markdown from '../apis/Markdown';
 import { Container } from 'semantic-ui-react';
 
 const BasicMdPage = ({ mdContent }) => {
