@@ -1,7 +1,10 @@
 {
   "name": "adam_kecskes_consulting",
+  "author": "Adam Kecskes",
   "version": "0.1.0",
-  "private": true,
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "src/index.js",
+  "homepage": "http://localhost:3000/",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
@@ -28,8 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preinstall": "npx npm-force-resolutions"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,17 +51,13 @@
   "resolutions": {
     "graceful-fs": "4.2.3"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adamk72/AdamKecskesConsulting.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adamk72/AdamKecskesConsulting/issues"
-  },
-  "homepage": "http://localhost:3000/"
+  }
 }
