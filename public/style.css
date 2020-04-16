@@ -17,9 +17,12 @@ body #root h3.ui.header {
   font-family: 'Roboto Slab';
   font-size: 2em;
 }
-
+body #root .button:hover {
+  color: var(--secondary-color);
+}
 body #root .mainMenuItem:hover {
   border-bottom: 2px solid var(--highlight-color);
+  color: var(--highlight-color);
 }
 
 body #root h1.ui.header,
