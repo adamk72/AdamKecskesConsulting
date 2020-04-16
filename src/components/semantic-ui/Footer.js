@@ -58,15 +58,16 @@ const Footer = (props) => {
                 </List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column width={4}>
               <Header as='h4' content='Services' />
               <List link>
                 <List.Item as='a'>Operational Evaluations</List.Item>
                 <List.Item as='a'>Process Improvement</List.Item>
                 <List.Item as='a'>Software Architecture Reviews</List.Item>
+                <List.Item as='a'>Entropy Detection &amp; Management</List.Item>
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column width={4}>
               <Copyright />
             </Grid.Column>
           </Grid.Row>
