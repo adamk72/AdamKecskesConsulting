@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import HomepageHeading from './HomepageHeading';
 import getWidth from '../../apis/getWidth';
-import { Link } from 'react-router-dom';
+import MainMenuFragment from './MainMenuFragment';
 import {
-  Button,
   Container,
   Menu,
   Responsive,
@@ -47,23 +46,7 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <Menu.Item as={Link} to='/' className='mainMenuItem'>
-                  Home
-                </Menu.Item>
-                <Menu.Item as={Link} to='/portfolio' className='mainMenuItem'>
-                  Code Portfolio
-                </Menu.Item>
-                <Menu.Item as={Link} to='/work' className='mainMenuItem'>
-                  Work Experience
-                </Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
+                <MainMenuFragment />
               </Container>
             </Menu>
             <HomepageHeading />

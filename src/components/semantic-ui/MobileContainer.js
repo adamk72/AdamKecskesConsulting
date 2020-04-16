@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import HomepageHeading from './HomepageHeading';
 import getWidth from '../../apis/getWidth';
+import MainMenuFragment from './MainMenuFragment';
 import {
   Button,
   Container,
@@ -35,14 +36,7 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as='a' active>
-            Home
-          </Menu.Item>
-          <Menu.Item as='a'>Work</Menu.Item>
-          <Menu.Item as='a'>Company</Menu.Item>
-          <Menu.Item as='a'>Careers</Menu.Item>
-          <Menu.Item as='a'>Log in</Menu.Item>
-          <Menu.Item as='a'>Sign Up</Menu.Item>
+          <MainMenuFragment mobile />
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -56,14 +50,6 @@ class MobileContainer extends Component {
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
-                </Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
                 </Menu.Item>
               </Menu>
             </Container>
