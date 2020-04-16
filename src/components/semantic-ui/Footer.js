@@ -68,7 +68,21 @@ const Footer = (props) => {
               </List>
             </Grid.Column>
             <Grid.Column width={4}>
+              <Header as='h4' content='Other' />
               <Copyright />
+              <div style={{ marginTop: '10px' }}>
+                Icons made by{' '}
+                <a
+                  href='https://www.flaticon.com/authors/freepik'
+                  title='Freepik'
+                >
+                  Freepik
+                </a>{' '}
+                from{' '}
+                <a href='https://www.flaticon.com/' title='Flaticon'>
+                  www.flaticon.com
+                </a>{' '}
+              </div>
             </Grid.Column>
           </Grid.Row>
         </Grid>
