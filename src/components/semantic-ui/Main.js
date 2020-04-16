@@ -8,7 +8,7 @@ import CircularSegment from './CircularSegment';
 
 const domains = [
   'Server & Client Agile Software Development',
-  'Lean Product Lifecycle Management',
+  'Product Lifecycle Originination',
   'UX/UI Design Implementation',
   'Optimizing Operations',
   'Program Management',
