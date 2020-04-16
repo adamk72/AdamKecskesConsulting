@@ -10,7 +10,6 @@ const Homepage = () => (
     <Showcase />
     <SegmentDivider>I'm a problem solver&hellip;</SegmentDivider>
     <Main />
-    <SegmentDivider />
   </ResponsiveContainer>
 );
 
