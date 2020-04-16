@@ -7,14 +7,14 @@ import SegmentDivider from './SegmentDivider';
 import CircularSegment from './CircularSegment';
 
 const domains = [
-  'Server & Client Agile Software Development',
-  'Product Lifecycle Originination',
-  'UX/UI Design Implementation',
-  'Optimizing Operations',
-  'Program Management',
-  'Process Improvement',
-  'Quality Assurance',
-  'Technical Staffing',
+  { key: 1, text: 'Server & Client Agile Software Development' },
+  { key: 2, text: 'Product Lifecycle Originination' },
+  { key: 3, text: 'UX/UI Design Implementation' },
+  { key: 4, text: 'Optimizing Operations' },
+  { key: 5, text: 'Program Management' },
+  { key: 6, text: 'Process Improvement' },
+  { key: 7, text: 'Quality Assurance' },
+  { key: 8, text: 'Technical Staffing' },
 ];
 
 const Main = (props) => {
@@ -71,10 +71,10 @@ const Main = (props) => {
               <List relaxed size='huge' style={{ marginLeft: '50px' }}>
                 {domains.map((domain) => {
                   return (
-                    <List.Item>
+                    <List.Item key={domain.key}>
                       {' '}
                       <Icon name='chevron right' />
-                      {domain}
+                      {domain.text}
                     </List.Item>
                   );
                 })}
