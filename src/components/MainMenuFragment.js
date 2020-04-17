@@ -14,7 +14,7 @@ export default function MainMenuFragment({ isMobile }) {
       <Menu.Item as={Link} to='/work' className='mainMenuItem'>
         Work Experience
       </Menu.Item>
-      {!isMobile ? (
+      {/* {!isMobile ? (
         <Menu.Item position='right'>
           <Button as='a' inverted>
             Log In
@@ -32,7 +32,7 @@ export default function MainMenuFragment({ isMobile }) {
             Sign Up
           </Menu.Item>
         </React.Fragment>
-      )}
+      )} */}
     </React.Fragment>
   );
 }
