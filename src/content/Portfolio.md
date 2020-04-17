@@ -1,17 +1,16 @@
-# Another blog post
+# Current Coding Portoflio
 
-#### March 23, 2020 by [Matt](/)
+This is a work in progress. You can find the work I'm doing at GitHub: [`https://github.com/adamk72`](#https://github.com/adamk72)
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# Planned Projects
 
-Curabitur blandit tempus porttitor. **Nullam quis risus eget urna mollis** ornare vel eu leo.
-Nullam id dolor id nibh ultricies vehicula ut id elit.
+---
 
-Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-Aenean lacinia bibendum nulla sed consectetur.
-
-Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+- **Professional Progress Website**
+  - The site you're looking it, done in ReactJS.
+- **Personal Activity Tracker for FitBit**
+  - A simple app where a user inputs a list of activites to be tracked; at the start of each activity, the user can quickly start the timer. The goal is for the user to be more conscious of where time in their day is spent.
+- **State of Mind Tracker for FitBit**
+  - Similar to the tracker, but the user tracks their choices and action from a more philosophical point of view, following the prececpts of _Monk, Marshallow, or Monster_.
+- **Esoteric Word Website**
+  - As a bit of word nerd and public speaking trainer, I want to promote words that are not as well used, but I think would really add flavor to our conversations and definitely take up a professional speakera anoter notch.
