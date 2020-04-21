@@ -8,7 +8,7 @@ import workPageContent from '../src/content/WorkExperience.md';
 import portfolioPageContent from '../src/content/Portfolio.md';
 
 ReactDOM.render(
-  <Router>
+  <Router basename='/k'>
     <Route path='/' exact component={Homepage} />
     <Route
       path='/portfolio'
