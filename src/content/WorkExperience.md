@@ -1,4 +1,4 @@
-# Work Experience
+# Abridged CV
 
 ---
 
@@ -73,3 +73,32 @@ Mar 1996 - Feb 1997 _San Diego, CA_
 - Managed customer support team.
 - Created training courses for new customer support employees.
 - Interfaced with network administrators to aid in debugging network issues from the customer’s point of view.
+
+---
+
+# Technical Details
+
+## Current Technical Status
+
+- Focused on MongoDB/Express/React/Node.js web stack via online courses like Udemy and FreeCodeCamp.
+- Udemy courses take (over 160 hours of training time):
+  -- Advanced React and Redux; Modern React with Redux; The Complete React Native + Hooks Course; The Complete 2020 Web Development Bootcamp
+
+## Technical Aptitudes
+
+### Product Lifecycle/DevOp Systems
+
+- Atlassian JIRA, Confluence, Stash
+- Artifactory Binary Repository Management
+- Jenkins and TeamCity Continuous Integration
+- QMetry Test Management
+- Trello and FogBugz Project Management
+- Bugzilla Bug Tracking
+
+### Code/Development/Debugging
+
+- C++, C, Objective-C, Java ( J2ME), VBScript, C#/.NET
+- Perl, awk, sed, UNIX CLI; LDAP; Bash
+- HTML, CSS, PHP, MySQL, PostgreSQL
+- GNU make, Ant, Git, Subversion, Perforce
+- Visual Studio, Netbeans, Xcode, Vim, Cygwin, Wireshark, VSCode

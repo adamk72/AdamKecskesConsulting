@@ -6,9 +6,10 @@ import Homepage from './components/Homepage';
 import BasicMdPage from './components/BasicMdPage';
 import workPageContent from '../src/content/WorkExperience.md';
 import portfolioPageContent from '../src/content/Portfolio.md';
+import philosophyPageContent from '../src/content/Philosophy.md';
 
 ReactDOM.render(
-  <Router basename='/k'>
+  <Router basename='/'>
     <Route path='/' exact component={Homepage} />
     <Route
       path='/portfolio'
@@ -17,6 +18,10 @@ ReactDOM.render(
     <Route
       path='/work'
       component={() => <BasicMdPage mdContent={workPageContent} />}
+    />
+    <Route
+      path='/optimization'
+      component={() => <BasicMdPage mdContent={philosophyPageContent} />}
     />
   </Router>,
 

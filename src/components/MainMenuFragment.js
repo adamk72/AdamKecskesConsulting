@@ -8,11 +8,14 @@ export default function MainMenuFragment({ isMobile }) {
       <Menu.Item as={Link} to='/' className='mainMenuItem'>
         Home
       </Menu.Item>
-      <Menu.Item as={Link} to='/portfolio' className='mainMenuItem'>
+      {/* <Menu.Item as={Link} to='/portfolio' className='mainMenuItem'>
         Code Portfolio
+      </Menu.Item> */}
+      <Menu.Item as={Link} to='/optimization' className='mainMenuItem'>
+        Optimization
       </Menu.Item>
       <Menu.Item as={Link} to='/work' className='mainMenuItem'>
-        Work Experience
+        Abridged CV
       </Menu.Item>
       {/* {!isMobile ? (
         <Menu.Item position='right'>

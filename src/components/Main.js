@@ -23,7 +23,7 @@ const Main = (props) => {
       <Container>
         <Grid verticalAlign='middle'>
           <Grid.Row centered>
-            <Grid.Column width={6}>
+            <Grid.Column width={6} className='mobile hidden'>
               <CircularSegment radius={256}>
                 <Image src='/images/computer.png' alt='' />
               </CircularSegment>
@@ -68,7 +68,7 @@ const Main = (props) => {
                   Some of the domains I've worked in:
                 </p>
               </SimpleCard>
-              <List relaxed size='huge' style={{ marginLeft: '50px' }}>
+              <List className='announce' relaxed size='huge'>
                 {domains.map((domain) => {
                   return (
                     <List.Item key={domain.key}>
@@ -80,8 +80,8 @@ const Main = (props) => {
                 })}
               </List>
             </Grid.Column>
-            <Grid.Column width={2}></Grid.Column>
-            <Grid.Column width={4}>
+            <Grid.Column width={2} className='mobile hidden'></Grid.Column>
+            <Grid.Column width={4} className='mobile hidden'>
               <CircularSegment radius={256}>
                 <Image src='/images/flow.png' alt='' />
               </CircularSegment>

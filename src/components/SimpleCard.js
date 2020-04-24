@@ -15,16 +15,7 @@ const SimpleCard = ({
       className={className ? className + ' simplecard' : 'simplecard'}
       style={{ textIndent: indent ? indent : null }}
     >
-      <Header as='h3'>
-        <span
-          style={{
-            fontFamily: marker ? 'Montserrat Alternates' : null,
-            fontSize: marker ? '1.5em' : null,
-          }}
-        >
-          {title}
-        </span>
-      </Header>
+      <Header as='h3'>{title}</Header>
       <p style={{ textIndent: indent ? indent : null }}>{body}</p>
       {children}
     </div>

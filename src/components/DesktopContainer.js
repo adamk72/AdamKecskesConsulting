@@ -50,6 +50,7 @@ class DesktopContainer extends Component {
                 <MainMenuFragment />
               </Container>
             </Menu>
+
             <MainSiteHeader />
           </Segment>
         </Visibility>

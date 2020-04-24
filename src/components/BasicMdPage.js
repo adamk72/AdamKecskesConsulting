@@ -18,7 +18,7 @@ const BasicMdPage = ({ mdContent }) => {
 
   return (
     <ResponsiveContainer>
-      <Container>
+      <Container className='basic-md-container'>
         <Markdown>{content}</Markdown>
       </Container>
     </ResponsiveContainer>
