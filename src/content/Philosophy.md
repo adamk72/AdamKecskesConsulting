@@ -32,4 +32,4 @@ Steady state is the ideal state to be in; however, because life happens to us al
 
 The other two states are transitory -- and ideally should be as short lived as possible; what constitutes "short" depends on the nature of the company, budget, and employee engagement.
 
-My job is to help companies recognize what state they are in and help them make the necessary transitions. Even a steady state organization needs help and guidance so if managment wants to sustain that state for as long as possible. If you're interested in knowing more, feel free to reach out to me.
+My job is to help companies recognize what state they are in and help them make the necessary transitions. Even a steady state organization needs help and guidance if management wants to sustain that state for as long as possible. If you're interested in knowing more, feel free to reach out to me.
