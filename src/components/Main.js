@@ -32,7 +32,7 @@ const Main = (props) => {
             <Grid.Column width={10}>
               <SimpleCard className='top' title='I Ask a Lot of Questions'>
                 <p>
-                  I'm a troublesooter; instead of putting up with the status
+                  I'm a troubleshooter; instead of putting up with the status
                   quo, I'm always asking, 'What improvements can we make to make
                   our efforts a little easier?
                   <br />
