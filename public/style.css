@@ -115,7 +115,7 @@ body #root .ui.largeCard {
   width: 500px;
 }
 
-.simplecard > p {
+.simplecard p {
   font-size: 1.33em;
 }
 

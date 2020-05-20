@@ -38,9 +38,9 @@ const Main = (props) => {
                     make our efforts a little easier?
                   </p>
                   <p>
-                    I also maintain a customer (and people in general!) centeric
-                    worldview. The question I ask myself is, "Which solutions
-                    benefit the most of us, and still respect all of us? "
+                    I also maintain a customer-centeric worldview. The question
+                    I ask myself is, "Which solutions benefit the most of us,
+                    and still respect all of us? "
                   </p>
                   <p>
                     As such, I've moved up to Director and VP positions at
