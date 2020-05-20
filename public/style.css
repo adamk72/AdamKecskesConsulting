@@ -1,12 +1,23 @@
 :root {
   --primary-color: #2185d0;
   --secondary-color: #1a58e8;
+  --secondary-color-inverted: whitesmoke;
   --royal-color: #1820de;
   --highlight-color: #dee5f3;
   --contrast-color: #9cb3dc;
-  --text-color: whitesmoke;
-}
 
+  --text-color: #002e63;
+  --text-color-inverted: whitesmoke;
+  --secondary-color: #1a58e8;
+  --secondary-color-inverted: whitesmoke;
+}
+body #root .ui.menu .item .reactLink {
+  /* So that it will match the semantic ui style */
+  position: relative;
+  vertical-align: middle;
+  line-height: 1;
+  flex: 0 0 auto;
+}
 .simplecard.announce {
   font-family: 'Montserrat Alternates';
   font-size: 1.5em;
@@ -33,23 +44,30 @@ body #root .container.basic-md-container h5 {
   font-family: 'Montserrat';
 }
 
-body #root #main-site-header {
-  background-color: var(--text-color);
-  color: var(--royal-color);
+body #root #main-site-header,
+body #root #footer {
+  color: var(--text-color-inverted);
+  background-color: var(--secondary-color);
 }
+body #root #footer h2,
+body #root #footer h1,
+body #root #footer h4,
 body #root #main-site-header h2,
 body #root #main-site-header h1,
 body #root #main-site-header h4 {
   font-family: 'Roboto Slab';
   font-weight: 'normal';
   margin-bottom: 0;
-  color: var(--secondary-color);
+  color: var(--text-color-inverted);
 }
 
-body #root,
-body #root .ui.menu {
-  background-color: var(--secondary-color);
+body #root {
+  background-color: var(--secondary-color-inverted);
   color: var(--text-color);
+}
+body #root .ui.menu {
+  background-color: var(--text-color-inverted);
+  color: var(--secondary-color);
 }
 
 body #root h3.ui.header {
@@ -57,25 +75,26 @@ body #root h3.ui.header {
   font-size: 2em;
 }
 body #root #main-site-header .button:hover {
-  color: var(--text-color);
-  background-color: var(--royal-color);
+  color: var(--secondary-color);
+  background-color: var(--secondary-color-inverted);
 }
 
 body #root #main-site-header .button {
-  color: var(--royal-color);
+  color: var(--text-color-inverted);
 }
+
+body #root .ui.secondary.inverted.menu a.item {
+  color: var(--text-color) !important;
+}
+
 body #root #footer .button:hover {
   color: var(--secondary-color);
+  background-color: var(--secondary-color-inverted);
 }
 body #root #footer .button {
-  color: var(--text-color);
+  color: var(--secondary-color-inverted);
+  background-color: var(--secondary-color);
 }
-
-body #root .mainMenuItem:hover {
-  border-bottom: 2px solid var(--highlight-color);
-  color: var(--highlight-color);
-}
-
 body #root h1.ui.header,
 body #root h2.ui.header,
 body #root h3.ui.header,
@@ -84,20 +103,19 @@ body #root a {
   color: var(--text-color);
 }
 
+body #root #main-site-header .ui.secondary.inverted.menu a.item {
+  color: var(--secondary-color);
+}
+body #root .mainMenuItem:hover {
+  border-bottom: 2px solid var(--royal-color);
+  color: var(--secondary-color-inverted);
+}
+
 body #root .ui.largeCard {
   width: 500px;
 }
 
-body #root .ui.menu .item .reactLink {
-  /* So that it will match the semantic ui style */
-  position: relative;
-  vertical-align: middle;
-  line-height: 1;
-  flex: 0 0 auto;
-  color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.simplecard p {
+.simplecard > p {
   font-size: 1.33em;
 }
 
