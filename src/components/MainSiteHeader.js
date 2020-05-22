@@ -10,7 +10,7 @@ const MainSiteHeader = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Adam Kecskes Consulting'
+      content='Adam Kecskes'
       style={{
         fontSize: mobile ? '2em' : '4em',
         marginTop: mobile ? '0.5em' : '1em',

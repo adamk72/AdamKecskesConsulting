@@ -9,7 +9,6 @@ const Footer = (props) => {
   return (
     <React.Fragment>
       <div id='footer'>
-        <SegmentDivider />
         <Segment basic vertical style={{ padding: '5em 0em' }}>
           <Container>
             <Grid divided stackable>
@@ -32,6 +31,7 @@ const Footer = (props) => {
                 <Grid.Column width={4}>
                   <Header as='h4' content='Other' />
                   <Copyright />
+
                   <div style={{ marginTop: '10px' }}>
                     Icons made by{' '}
                     <a
@@ -39,6 +39,13 @@ const Footer = (props) => {
                       title='Freepik'
                     >
                       Freepik
+                    </a>{' '}
+                    &amp;{' '}
+                    <a
+                      href='https://creativemarket.com/eucalyp'
+                      title='Eucalyp'
+                    >
+                      Eucalyp
                     </a>{' '}
                     from{' '}
                     <a href='https://www.flaticon.com/' title='Flaticon'>

@@ -39,7 +39,7 @@ const Showcase = (props) => {
             <SimpleCard className='announce' title='Operational Optimizer' />
             <SimpleCard className='announce' title='Program Orchestrator' />
 
-            <SimpleCard className='announce' title='Staffing Consultant' />
+            <SimpleCard className='announce' title='Customer Advocate' />
             <SimpleCard body="... and so much more. Most importantly, I'm here to help your company overcome a range of problems." />
           </Grid.Column>
         </Grid.Row>

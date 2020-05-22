@@ -9,8 +9,10 @@ import { __remotepath__ } from '../config';
 
 const domains = [
   { key: 1, text: 'Server & Client Agile Software Development' },
-  { key: 2, text: 'Product Lifecycle Originination' },
   { key: 3, text: 'UX/UI Design Implementation' },
+  { key: 2, text: 'Product Lifecycle Origination' },
+  { key: 10, text: 'Knowledge Management' },
+  { key: 9, text: 'Information Archiecture' },
   { key: 4, text: 'Optimizing Operations' },
   { key: 5, text: 'Program Management' },
   { key: 6, text: 'Process Improvement' },
@@ -32,25 +34,23 @@ const Main = (props) => {
             <Grid.Column width={10}>
               <SimpleCard className='top' title='I Ask a Lot of Questions'>
                 <p>
-                  <p>
-                    I'm a troubleshooter; instead of putting up with the status
-                    quo, I'm always asking, 'What improvements can we make to
-                    make our efforts a little easier?
-                  </p>
-                  <p>
-                    I also maintain a customer-centeric worldview. The question
-                    I ask myself is, "Which solutions benefit the most of us,
-                    and still respect all of us? "
-                  </p>
-                  <p>
-                    As such, I've moved up to Director and VP positions at
-                    various companies because that is were I can provide the
-                    greatest level of service. However, I'm not afraid to dig
-                    into code, databases, or documentation when necessary. Often
-                    times it's looking into the details that reveal issues
-                    &mdash; and solutions &mdash; which will best impact the
-                    entire organization.
-                  </p>
+                  I'm a troubleshooter; instead of putting up with the status
+                  quo, I'm always asking, 'What improvements can we make to make
+                  our efforts a little easier?
+                </p>
+                <p>
+                  I also maintain a customer-centeric worldview. The question I
+                  ask myself is, "Which solutions benefit the most of us, and
+                  still respect all of us? "
+                </p>
+                <p>
+                  As such, I've moved up to Director and VP positions at various
+                  companies because that is were I can provide the greatest
+                  level of service. However, I'm not afraid to dig into code,
+                  databases, or documentation when necessary. Often times it's
+                  looking into the details that reveal issues &mdash; and
+                  solutions &mdash; which will best impact the entire
+                  organization.
                 </p>
               </SimpleCard>
             </Grid.Column>
@@ -58,13 +58,13 @@ const Main = (props) => {
           <Grid.Row centered>
             <Grid.Column>
               <SegmentDivider margin='3em 0em'>
-                &hellip;With a Wide Range of Experiences
+                &hellip;With a Wide Range of Experiences&hellip;
               </SegmentDivider>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row centered>
             <Grid.Column width={10}>
-              <SimpleCard title='And I Can Fill Many Roles' body=''>
+              <SimpleCard title='I Can Fill Many Roles' body=''>
                 <p>
                   I've worked for 3 large cap companies and 3 startup companies
                   <br />
@@ -94,6 +94,42 @@ const Main = (props) => {
               <CircularSegment radius={256}>
                 <Image src={__remotepath__ + '/images/flow.png'} alt='' />
               </CircularSegment>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Grid.Column>
+              <SegmentDivider margin='3em 0em'>
+                &hellip;and I play well with others.
+              </SegmentDivider>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row centered>
+            <Grid.Column width={6} className='mobile hidden'>
+              <CircularSegment radius={256}>
+                <Image src={__remotepath__ + '/images/teamwork.png'} alt='' />
+              </CircularSegment>
+            </Grid.Column>
+            <Grid.Column width={10}>
+              <SimpleCard className='top' title='We Are Better Together'>
+                <p>
+                  The best teams I’ve lead or worked for have been the ones
+                  where we had mutual respect for one another and engaged in our
+                  work with transparency and humility.
+                </p>
+                <p>
+                  I excel in team-based, collaborative environments. Not only do
+                  I perform better, because of my diverse set of skills and
+                  experiences, but I also act as a catalyst to turbo-charge the
+                  productivity of the rest of the team.
+                </p>
+                <p>
+                  In teams that I manage, I rely heavily on the expertise and
+                  fact-oriented opinions of each person to make better overall
+                  decisions. I distinctly enjoy learning about the innovative
+                  solutions that my teams come up with; they are the source and
+                  I am the guide.
+                </p>
+              </SimpleCard>
             </Grid.Column>
           </Grid.Row>
         </Grid>

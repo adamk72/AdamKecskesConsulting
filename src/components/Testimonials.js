@@ -16,7 +16,9 @@ const Testimonials = (props) => {
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
             <List relaxed size='huge'>
               <List.Item>Server &amp; Client Software Development</List.Item>
-              <List.Item>Product Lifecycle Managment </List.Item>
+              <List.Item>Product Lifecycle Management </List.Item>
+              <List.Item>Information Archiecture</List.Item>
+              <List.Item>Knowledge Management</List.Item>
               <List.Item>Program Management</List.Item>
               <List.Item>Process Improvement</List.Item>
               <List.Item>Optimizing Operations</List.Item>
