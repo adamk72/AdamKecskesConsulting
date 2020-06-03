@@ -1,5 +1,4 @@
 import React from 'react';
-import SegmentDivider from './SegmentDivider';
 import SocialList from './SocialList';
 
 import { Grid, Header, Segment, Container, List } from 'semantic-ui-react';

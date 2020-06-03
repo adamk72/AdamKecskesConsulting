@@ -18,7 +18,7 @@ const MainSiteHeader = ({ mobile }) => (
     />
     <Header
       as='h4'
-      content='Specializing in No-Code &amp; Low-code Operations Optimization'
+      content='Specializing in No-Code &amp; Low-code Operations Optimization and Effective Program Management'
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
