@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import MainSiteHeader from './MainSiteHeader';
+import MainSiteHeader from '../content/MainSiteHeader';
 import getWidth from '../apis/getWidth';
-import MainMenuFragment from './MainMenuFragment';
+import MainMenuFragment from '../content/MainMenuFragment';
 import {
   Container,
   Icon,

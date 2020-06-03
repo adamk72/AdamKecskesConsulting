@@ -1,8 +1,8 @@
 import React from 'react';
-import ResponsiveContainer from './ResponsiveContainer';
+import ResponsiveContainer from '../components/ResponsiveContainer';
 import Showcase from './Showcase';
 import Main from './Main';
-import SegmentDivider from './SegmentDivider';
+import SegmentDivider from '../components/SegmentDivider';
 
 const Homepage = () => (
   <ResponsiveContainer>

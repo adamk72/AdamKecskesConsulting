@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleCard from './SimpleCard';
+import SimpleCard from '../components/SimpleCard';
 import { __remotepath__ } from '../config';
 
 import { Card, Grid, Image, Segment } from 'semantic-ui-react';

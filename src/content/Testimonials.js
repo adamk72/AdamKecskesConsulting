@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleCard from './SimpleCard';
+import SimpleCard from '../components/SimpleCard';
 import { List } from 'semantic-ui-react';
 
 import { Grid, Segment } from 'semantic-ui-react';

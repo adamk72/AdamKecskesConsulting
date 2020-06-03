@@ -1,10 +1,10 @@
 import React from 'react';
-import SimpleCard from './SimpleCard';
+import SimpleCard from '../components/SimpleCard';
 
 import { List, Icon, Segment, Container, Grid, Image } from 'semantic-ui-react';
 
-import SegmentDivider from './SegmentDivider';
-import CircularSegment from './CircularSegment';
+import SegmentDivider from '../components/SegmentDivider';
+import CircularSegment from '../components/CircularSegment';
 import { __remotepath__ } from '../config';
 
 const domains = [

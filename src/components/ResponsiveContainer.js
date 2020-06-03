@@ -4,16 +4,21 @@ import React from 'react';
 import DesktopContainer from './DesktopContainer';
 import MobileContainer from './MobileContainer';
 import Footer from './Footer';
+import FooterContent from '../content/FooterContent';
 
 const ResponsiveContainer = ({ children }) => (
   <div>
     <DesktopContainer>
       {children}
-      <Footer />
+      <Footer>
+        <FooterContent />
+      </Footer>
     </DesktopContainer>
     <MobileContainer>
       {children}
-      <Footer />
+      <Footer>
+        <FooterContent />
+      </Footer>
     </MobileContainer>
   </div>
 );
