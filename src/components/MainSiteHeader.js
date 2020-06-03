@@ -16,15 +16,15 @@ const MainSiteHeader = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1em',
       }}
     />
-    {/* <Header
+    <Header
       as='h4'
-      content='Software, Systems, &amp; Service'
+      content='Specializing in No-Code &amp; Low-code Operations Optimization'
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1em',
+        marginTop: mobile ? '0.13em' : '.25em',
       }}
-    /> */}
+    />
     <Header>
       <SocialList inverted='true' />
     </Header>
