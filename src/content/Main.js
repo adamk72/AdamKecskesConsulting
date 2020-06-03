@@ -117,17 +117,23 @@ const Main = (props) => {
                   work with transparency and humility.
                 </p>
                 <p>
-                  I excel in team-based, collaborative environments. Not only do
-                  I perform better, because of my diverse set of skills and
-                  experiences, but I also act as a catalyst to turbo-charge the
-                  productivity of the rest of the team.
-                </p>
-                <p>
                   In teams that I manage, I rely heavily on the expertise and
                   fact-oriented opinions of each person to make better overall
                   decisions. I distinctly enjoy learning about the innovative
-                  solutions that my teams come up with; they are the source and
-                  I am the guide.
+                  solutions that my teams come up with.
+                </p>
+                <p>
+                  And when it comes to leadership, I stick to principles that
+                  respect each person; you don't know why they did X, Y, or Z
+                  unless you ask them. Principles such as:
+                  <ul>
+                    <li>Transparency &amp; Honesty</li>
+                    <li>Safety both in environment and in failure</li>
+                    <li>
+                      Recongize leadership and provide opporutnites for
+                      improvement
+                    </li>
+                  </ul>
                 </p>
               </SimpleCard>
             </Grid.Column>
