@@ -21,7 +21,7 @@ export default function MainMenuFragment({ isMobile }) {
         text='Case Studies'
       >
         <Dropdown.Menu>
-          <Dropdown.Item className='mainDropdownItem'>
+          <Dropdown.Item>
             <Dropdown.Item as={Link} to='/simpleCases' className='mainMenuItem'>
               Simple Cases
             </Dropdown.Item>

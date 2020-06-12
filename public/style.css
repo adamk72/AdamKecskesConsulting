@@ -110,8 +110,9 @@ body #root .mainMenuItem:hover {
   border-bottom: 2px solid var(--royal-color);
   color: var(--secondary-color-inverted);
 }
-body #root .mainMenuItem:hover {
+body #root .mainDropdownItem:hover {
   color: var(--secondary-color-inverted);
+  border-bottom: 2px solid var(--royal-color);
 }
 
 body #root .ui.dropdown > .text {
