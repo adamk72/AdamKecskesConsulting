@@ -115,8 +115,10 @@ body #root .mainDropdownItem:hover {
   border-bottom: 2px solid var(--royal-color);
 }
 
+body #root .ui.dropdown > .dropdown.icon:before,
 body #root .ui.dropdown > .text {
   color: var(--text-color);
+  font-weight: 400;
 }
 
 body #root .ui.largeCard {
