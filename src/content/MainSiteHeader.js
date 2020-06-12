@@ -26,7 +26,7 @@ const MainSiteHeader = ({ mobile }) => (
       }}
     />
     <Header>
-      <SocialList inverted='true' />
+      <SocialList inverted={true} />
     </Header>
   </Container>
 );

@@ -10,7 +10,7 @@ const SocialList = ({ inverted = true, color = null }) => {
             as='a'
             href='mailto://adam@kecskes.net?subject=Business%20Inquiry%20from%20Website'
             compact
-            inverted
+            inverted={true}
             color={color}
           >
             <Icon name='mail' /> Email
