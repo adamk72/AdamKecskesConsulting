@@ -55,7 +55,6 @@ class MobileContainer extends Component {
             </Container>
             <MainSiteHeader mobile />
           </Segment>
-
           {children}
         </Sidebar.Pusher>
       </Responsive>

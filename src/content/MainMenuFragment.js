@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Dropdown } from 'semantic-ui-react';
 
 export default function MainMenuFragment({ isMobile }) {
   return (
@@ -8,15 +8,34 @@ export default function MainMenuFragment({ isMobile }) {
       <Menu.Item as={Link} to='/' className='mainMenuItem'>
         Home
       </Menu.Item>
-      {/* <Menu.Item as={Link} to='/portfolio' className='mainMenuItem'>
-        Code Portfolio
-      </Menu.Item> */}
+
       <Menu.Item as={Link} to='/optimization' className='mainMenuItem'>
         Optimization
       </Menu.Item>
       <Menu.Item as={Link} to='/work' className='mainMenuItem'>
         Abridged CV
       </Menu.Item>
+      <Dropdown
+        pointing
+        className='link item mainDropdownItem'
+        text='Case Studies'
+      >
+        <Dropdown.Menu>
+          <Dropdown.Item className='mainDropdownItem'>
+            <Dropdown.Item as={Link} to='/simpleCases' className='mainMenuItem'>
+              Simple Cases
+            </Dropdown.Item>
+            <Dropdown.Item
+              as={Link}
+              to='/complexCases'
+              className='mainMenuItem'
+            >
+              Complex Cases
+            </Dropdown.Item>
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+
       {/* {!isMobile ? (
         <Menu.Item position='right'>
           <Button as='a' inverted>

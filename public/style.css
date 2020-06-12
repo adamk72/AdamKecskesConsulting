@@ -110,6 +110,13 @@ body #root .mainMenuItem:hover {
   border-bottom: 2px solid var(--royal-color);
   color: var(--secondary-color-inverted);
 }
+body #root .mainMenuItem:hover {
+  color: var(--secondary-color-inverted);
+}
+
+body #root .ui.dropdown > .text {
+  color: var(--text-color);
+}
 
 body #root .ui.largeCard {
   width: 500px;

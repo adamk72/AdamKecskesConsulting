@@ -1,7 +1,5 @@
 # Philosophy of Optimization
 
-## Preamble
-
 I'm always amazed at how often I have conversations with people at various levels of business that leave me wondering, "How does anyone get any work done?"
 
 But we all know the answer: A company doesn't have to be "efficient" to be profitable, it just needs to be _effective_. Get enough people pointed in somewhat the same direction and presto, you have a viable and possibly even profitable company.
