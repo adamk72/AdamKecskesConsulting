@@ -121,8 +121,9 @@ body #root .ui.dropdown > .text {
   font-weight: 400;
 }
 
-body #root .ui.largeCard {
-  width: 500px;
+body #root .ui.menu .ui.dropdown .menu {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .simplecard p {

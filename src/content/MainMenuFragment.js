@@ -22,16 +22,23 @@ export default function MainMenuFragment({ isMobile }) {
       >
         <Dropdown.Menu>
           <Dropdown.Item>
-            <Dropdown.Item as={Link} to='/simpleCases' className='mainMenuItem'>
-              Simple Cases
-            </Dropdown.Item>
-            <Dropdown.Item
-              as={Link}
-              to='/complexCases'
-              className='mainMenuItem'
-            >
-              Complex Cases
-            </Dropdown.Item>
+            <Dropdown text='Simple'>
+              <Dropdown.Menu>
+                <Dropdown.Item as={Link} to='/simpleCases'>
+                  Simple Cases
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          </Dropdown.Item>
+
+          <Dropdown.Item>
+            <Dropdown text='Complex'>
+              <Dropdown.Menu>
+                <Dropdown.Item as={Link} to='/complexCases'>
+                  Complex Cases
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
