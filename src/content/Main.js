@@ -28,7 +28,7 @@ const Main = (props) => {
           <Grid.Row centered>
             <Grid.Column width={6} className='mobile hidden'>
               <CircularSegment radius={256}>
-                <Image src={__remotepath__ + '/images/computer.png'} alt='' />
+                <Image src={__remotepath__ + 'images/computer.png'} alt='' />
               </CircularSegment>
             </Grid.Column>
             <Grid.Column width={10}>
@@ -92,7 +92,7 @@ const Main = (props) => {
             <Grid.Column width={2} className='mobile hidden'></Grid.Column>
             <Grid.Column width={4} className='mobile hidden'>
               <CircularSegment radius={256}>
-                <Image src={__remotepath__ + '/images/flow.png'} alt='' />
+                <Image src={__remotepath__ + 'images/flow.png'} alt='' />
               </CircularSegment>
             </Grid.Column>
           </Grid.Row>
@@ -106,7 +106,7 @@ const Main = (props) => {
           <Grid.Row centered>
             <Grid.Column width={6} className='mobile hidden'>
               <CircularSegment radius={256}>
-                <Image src={__remotepath__ + '/images/teamwork.png'} alt='' />
+                <Image src={__remotepath__ + 'images/teamwork.png'} alt='' />
               </CircularSegment>
             </Grid.Column>
             <Grid.Column width={10}>

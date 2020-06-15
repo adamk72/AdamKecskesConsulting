@@ -11,7 +11,7 @@ import portfolioPageContent from '../src/content/Portfolio.md';
 import philosophyPageContent from '../src/content/Philosophy.md';
 
 ReactDOM.render(
-  <Router basename='/k'>
+  <Router basename='/'>
     <Route path='/' exact component={Homepage} />
     <Route
       path='/portfolio'

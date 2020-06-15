@@ -14,11 +14,13 @@ const Showcase = (props) => {
               <Image
                 src={
                   __remotepath__ +
-                  '/images/mrs_mcquaries_chair_sydney_australia.jpg'
+                  'images/mrs_mcquaries_chair_sydney_australia.jpg'
                 }
                 wrapped
-                ui={false}
                 fluid
+                rounded
+                size='medium'
+                ui={false}
               />
               <Card.Content>
                 <Card.Header>Adam Kecskes</Card.Header>

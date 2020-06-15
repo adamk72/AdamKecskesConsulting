@@ -1,1 +1,1 @@
-export const __remotepath__ = '/k';
+export const __remotepath__ = '/';
