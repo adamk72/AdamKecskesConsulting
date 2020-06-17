@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 import Homepage from './content/Homepage';
 import BasicMdPage from './components/BasicMdPage';
-import workPageContent from '../src/content/WorkExperience.md';
-import simpleCasesPageContent from '../src/content/SimpleCases.md';
-import complexCases from '../src/content/ComplexCases.md';
-import portfolioPageContent from '../src/content/Portfolio.md';
-import philosophyPageContent from '../src/content/Philosophy.md';
+import workPageContent from '../src/content/md_files/WorkExperience.md';
+import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
+import automatingreporting from '../src/content/md_files/AutomatingTheReporting.md';
+import portfolioPageContent from '../src/content/md_files/Portfolio.md';
+import philosophyPageContent from '../src/content/md_files/Philosophy.md';
 
 ReactDOM.render(
   <Router basename='/'>
@@ -26,12 +26,12 @@ ReactDOM.render(
       component={() => <BasicMdPage mdContent={philosophyPageContent} />}
     />
     <Route
-      path='/simpleCases'
-      component={() => <BasicMdPage mdContent={simpleCasesPageContent} />}
+      path='/thespreadsheet'
+      component={() => <BasicMdPage mdContent={thespreadsheet} />}
     />
     <Route
-      path='/complexCases'
-      component={() => <BasicMdPage mdContent={complexCases} />}
+      path='/automatingreporting'
+      component={() => <BasicMdPage mdContent={automatingreporting} />}
     />
   </Router>,
 

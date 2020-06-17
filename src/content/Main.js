@@ -39,13 +39,13 @@ const Main = (props) => {
                   our efforts a little easier?
                 </p>
                 <p>
-                  I also maintain a customer-centeric worldview. The question I
+                  I also maintain a customer-centric worldview. The question I
                   ask myself is, "Which solutions benefit the most of us, and
-                  still respect all of us? "
+                  still respect all of us?"
                 </p>
                 <p>
                   As such, I've moved up to Director and VP positions at various
-                  companies because that is were I can provide the greatest
+                  companies because that is where I can provide the greatest
                   level of service. However, I'm not afraid to dig into code,
                   databases, or documentation when necessary. Often times it's
                   looking into the details that reveal issues &mdash; and
@@ -71,7 +71,7 @@ const Main = (props) => {
                   all at various stages of maturity,&nbsp;&nbsp;giving me a
                   broad scope
                   <br />
-                  business opportunites to learn from.
+                  of business opportunites to learn from.
                   <br />
                   <br />
                   Some of the domains I've worked in:
@@ -128,9 +128,9 @@ const Main = (props) => {
                   unless you ask them. Principles such as:
                   <ul>
                     <li>Transparency &amp; Honesty</li>
-                    <li>Safety both in environment and in failure</li>
+                    <li>Safety both in the environment and in failure</li>
                     <li>
-                      Recongize leadership and provide opporutnites for
+                      Recognize leadership and provide opportunities for
                       improvement
                     </li>
                   </ul>

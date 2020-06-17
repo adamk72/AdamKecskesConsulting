@@ -21,24 +21,12 @@ export default function MainMenuFragment({ isMobile }) {
         text='Case Studies'
       >
         <Dropdown.Menu>
-          <Dropdown.Item>
-            <Dropdown text='Simple'>
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to='/simpleCases'>
-                  Simple Cases
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown.Item as={Link} to='/thespreadsheet'>
+            The Spreadsheet
           </Dropdown.Item>
 
-          <Dropdown.Item>
-            <Dropdown text='Complex'>
-              <Dropdown.Menu>
-                <Dropdown.Item as={Link} to='/complexCases'>
-                  Complex Cases
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
+          <Dropdown.Item as={Link} to='/automatingreporting'>
+            Automating the Reporting
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
