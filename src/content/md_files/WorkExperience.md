@@ -6,7 +6,7 @@
 
 ### Director of IT and Business Operations Manager
 
-Oct 2014 – March5 @ _Austin, TX_
+Oct 2014 – March 2015 @ _Austin, TX_
 
 - Found and solved many weak process points through root cause analysis; provided technical risk reviews for cloud and client services.
 - Managed transition of the company’s primary product from IPv4 systems to support IPv6 on Amazon AWS EC2 & ELB instances.
@@ -19,7 +19,7 @@ Oct 2014 – March5 @ _Austin, TX_
 
 ### Operations Program Manager
 
-Aug 2011 – Oct @ _Hillsboro, OR_
+Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 - Headed review committee to determine DevOps and application lifecycle systems solutions for the newly formed department.
 - System included project management, continuous integration and testing, and policies for data migration, security, backup and recovery solutions.
