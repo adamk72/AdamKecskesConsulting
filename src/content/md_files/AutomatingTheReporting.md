@@ -11,3 +11,7 @@ When I came to the organization and discovered the issue, I wrote a simple awk s
 The end result was the management team had up-to-date information in near real-time (the database itself was large and inefficient -- another story for another time -- and took time to download as a .cvs file), and could make better decisions as a result.
 
 Watch out for what takes so much time that the data is no longer useful by the time the report come out. A business should not be run on old data.
+
+### Side Note
+
+I had other options rather than using an archaic text manipulation like awk, but those would have incurred additional cost and complexity, including a learning curve, plus many choices needed a lot of database coding to fix some of the basic issues the database had. Awk was free, easily accessed and available, and simple to implement. Any decent scripting language like Python or Ruby could have done equally as well.
