@@ -28,6 +28,10 @@ export default function MainMenuFragment({ isMobile }) {
           <Dropdown.Item as={Link} to='/automatingreporting'>
             Automating the Reporting
           </Dropdown.Item>
+
+          <Dropdown.Item as={Link} to='/theproductlifecycle'>
+            The Product Lifecycle
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
 
