@@ -7,7 +7,7 @@ export function getSocialInfo() {
       href:
         'mailto://adam@kecskes.net?subject=Business%20Inquiry%20from%20Website',
       icon: null,
-      text: 'Email',
+      text: 'Foo-Email',
     },
     {
       href: 'https://github.com/adamk72',
