@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
-import SocialList from './SocialList';
+import SocialList from '../components/SocialList';
 
 const MainSiteHeader = ({ mobile }) => (
   <Container>
