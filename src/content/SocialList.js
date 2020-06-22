@@ -1,9 +1,10 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import { FaAt, FaGithub, FaPhone, FaLinkedin } from 'react-icons/fa';
 
-const SocialList = ({ inverted = true, color = null }) => {
+const SocialList = ({ items }) => {
   return (
     <React.Fragment>
       <ListGroup>
@@ -33,4 +34,10 @@ const SocialList = ({ inverted = true, color = null }) => {
   );
 };
 
-export default SocialList;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    socialInfo: state.socialInfo,
+  };
+};
+
+export default connect(mapStateToProps)(SocialList);

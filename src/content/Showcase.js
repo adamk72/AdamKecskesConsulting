@@ -1,6 +1,5 @@
 import React from 'react';
 import SimpleCard from '../components/SimpleCard';
-import { __remotepath__ } from '../config';
 
 import { Card, Row, Col, Container, Image } from 'react-bootstrap';
 
@@ -11,12 +10,7 @@ const Showcase = () => {
         <Row>
           <Col floated='left' width={8}>
             <Card className='largeCard'>
-              <Image
-                src={
-                  __remotepath__ +
-                  'images/mrs_mcquaries_chair_sydney_australia.jpg'
-                }
-              />
+              <Image src={'images/mrs_mcquaries_chair_sydney_australia.jpg'} />
               <Card.Body>
                 <Card.Title>Adam Kecskes</Card.Title>
                 <Card.Text>

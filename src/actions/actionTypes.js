@@ -1,0 +1,2 @@
+export const GET_SOCIAL_INFO = 'GET_SOCIAL_INFO';
+export const CREATE_NEW_CONTACT = 'CREATE_NEW_CONTACT';
