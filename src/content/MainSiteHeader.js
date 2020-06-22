@@ -1,33 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Header } from 'semantic-ui-react';
+import Container from 'react-bootstrap/Container';
 import SocialList from './SocialList';
-/* eslint-disable react/no-multi-comp */
-/* Heads up! MainSiteHeader uses inline styling, however it's not the best practice. Use CSS or styled components for
- * such things.
- */
+
 const MainSiteHeader = ({ mobile }) => (
-  <Container text>
-    <Header
-      as='h1'
-      content='Adam Kecskes'
+  <Container>
+    <h1
       style={{
         fontSize: mobile ? '2em' : '4em',
         marginTop: mobile ? '0.5em' : '1em',
       }}
-    />
-    <Header
-      as='h4'
-      content='Specializing in No-Code &amp; Low-code Operations'
+    >
+      Adam Kecskes
+    </h1>
+
+    <h4
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.13em' : '.25em',
       }}
-    />
-    <Header>
+    >
+      Specializing in No-Code &amp; Low-code Operations
+    </h4>
+    <h3>
       <SocialList inverted={true} />
-    </Header>
+    </h3>
   </Container>
 );
 

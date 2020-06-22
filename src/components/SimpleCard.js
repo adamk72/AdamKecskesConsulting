@@ -1,24 +1,16 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
-import { Header } from 'semantic-ui-react';
-
-const SimpleCard = ({
-  indent,
-  title,
-  body,
-  className = null,
-  children,
-  marker = null,
-}) => {
+const SimpleCard = ({ indent, title, body, className = null, children }) => {
   return (
-    <div
+    <Card
       className={className ? className + ' simplecard' : 'simplecard'}
       style={{ textIndent: indent ? indent : null }}
     >
-      <Header as='h3'>{title}</Header>
+      <h3>{title}</h3>
       <p style={{ textIndent: indent ? indent : null }}>{body}</p>
       {children}
-    </div>
+    </Card>
   );
 };
 

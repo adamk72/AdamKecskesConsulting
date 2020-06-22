@@ -1,56 +1,34 @@
 import React from 'react';
-import { List, Button, Icon } from 'semantic-ui-react';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Button from 'react-bootstrap/Button';
+import { FaAt, FaGithub, FaPhone, FaLinkedin } from 'react-icons/fa';
 
 const SocialList = ({ inverted = true, color = null }) => {
   return (
     <React.Fragment>
-      <List horizontal>
-        <List.Item>
-          <Button
-            as='a'
-            href='mailto://adam@kecskes.net?subject=Business%20Inquiry%20from%20Website'
-            compact
-            inverted={true}
-            color={color}
-          >
-            <Icon name='mail' /> Email
+      <ListGroup>
+        <ListGroup.Item>
+          <Button href='mailto://adam@kecskes.net?subject=Business%20Inquiry%20from%20Website'>
+            <FaAt /> Email
           </Button>
-        </List.Item>
-        <List.Item>
-          <Button
-            as='a'
-            href='https://github.com/adamk72'
-            compact
-            inverted={inverted}
-            color={color}
-          >
-            <Icon name='github' /> GitHub
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <Button href='https://github.com/adamk72'>
+            <FaGithub /> GitHub
           </Button>
-        </List.Item>
-        <List.Item>
-          <Button
-            as='a'
-            href='https://linkedin.com/in/adamkecskes/'
-            compact
-            inverted={inverted}
-            color={color}
-          >
-            <Icon name='linkedin' />
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <Button href='https://linkedin.com/in/adamkecskes/'>
+            <FaLinkedin />
             LinkedIn
           </Button>
-        </List.Item>
-        <List.Item>
-          <Button
-            as='a'
-            href='tel://512-662-2969'
-            compact
-            inverted={inverted}
-            color={color}
-          >
-            <Icon name='phone' /> 512-662-2969
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <Button href='tel://512-662-2969'>
+            <FaPhone /> 512-662-2969
           </Button>
-        </List.Item>
-      </List>
+        </ListGroup.Item>
+      </ListGroup>
     </React.Fragment>
   );
 };

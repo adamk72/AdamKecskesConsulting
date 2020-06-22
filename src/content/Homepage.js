@@ -6,9 +6,9 @@ import SegmentDivider from '../components/SegmentDivider';
 
 const Homepage = () => (
   <ResponsiveContainer>
-    <SegmentDivider>Who is &hellip; ?</SegmentDivider>
+    <SegmentDivider content='Who is &hellip; ?' />
     <Showcase />
-    <SegmentDivider>I'm a problem solver&hellip;</SegmentDivider>
+    <SegmentDivider content="I'm a problem solver&hellip;" />
     <Main />
   </ResponsiveContainer>
 );

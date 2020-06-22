@@ -9,7 +9,7 @@ import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md'
 import portfolioPageContent from '../src/content/md_files/Portfolio.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
 
-export function App() {
+const App = () => {
   return (
     <main>
       <Switch>
@@ -41,6 +41,6 @@ export function App() {
       </Switch>
     </main>
   );
-}
+};
 
 export default App;

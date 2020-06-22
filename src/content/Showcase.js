@@ -2,38 +2,33 @@ import React from 'react';
 import SimpleCard from '../components/SimpleCard';
 import { __remotepath__ } from '../config';
 
-import { Card, Grid, Image, Segment } from 'semantic-ui-react';
+import { Card, Row, Col, Container, Image } from 'react-bootstrap';
 
-const Showcase = (props) => {
+const Showcase = () => {
   return (
-    <Segment basic id='showcase' style={{ padding: '4em 4em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
-        <Grid.Row>
-          <Grid.Column floated='left' width={8}>
-            <Card centered raised className='largeCard'>
+    <Container id='showcase' style={{ padding: '4em 4em' }}>
+      <Container>
+        <Row>
+          <Col floated='left' width={8}>
+            <Card className='largeCard'>
               <Image
                 src={
                   __remotepath__ +
                   'images/mrs_mcquaries_chair_sydney_australia.jpg'
                 }
-                wrapped
-                fluid
-                rounded
-                size='medium'
-                ui={false}
               />
-              <Card.Content>
-                <Card.Header>Adam Kecskes</Card.Header>
-                <Card.Description>
+              <Card.Body>
+                <Card.Title>Adam Kecskes</Card.Title>
+                <Card.Text>
                   <span style={{ fontStyle: 'italic' }}>
                     My last name is pronounced 'kes-kes'; the 'c' is silent for
                     good luck.
                   </span>
-                </Card.Description>
-              </Card.Content>
+                </Card.Text>
+              </Card.Body>
             </Card>
-          </Grid.Column>
-          <Grid.Column width={8}>
+          </Col>
+          <Col width={8}>
             <SimpleCard
               className='top'
               body="Hi! I'm Adam Kecskes, and I've done a lot to help companies thrive over the 20 years of my career in technology. Here's how I consider myself; I'm a:"
@@ -43,10 +38,10 @@ const Showcase = (props) => {
 
             <SimpleCard className='announce' title='Customer Advocate' />
             <SimpleCard body="... and so much more. Most importantly, I'm here to help your company overcome a range of problems." />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+          </Col>
+        </Row>
+      </Container>
+    </Container>
   );
 };
 

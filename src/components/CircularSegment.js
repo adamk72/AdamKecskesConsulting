@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { Segment } from 'semantic-ui-react';
+import Image from 'react-bootstrap/Image';
 
-const CircularSegment = ({ children, radius = 175 }) => {
+const CircularSegment = ({ image }) => {
   return (
     <React.Fragment>
-      <Segment circular style={{ width: radius, height: radius }} inverted>
-        {children}
-      </Segment>
+      <Image src={image} roundedCircle />
     </React.Fragment>
   );
 };

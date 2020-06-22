@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ResponsiveContainer from './ResponsiveContainer';
 import Markdown from '../apis/Markdown';
-import { Container } from 'semantic-ui-react';
 
 const BasicMdPage = ({ mdContent }) => {
   const [content, setContent] = useState('');
@@ -18,9 +17,9 @@ const BasicMdPage = ({ mdContent }) => {
 
   return (
     <ResponsiveContainer>
-      <Container className='basic-md-container'>
+      <div className='basic-md-container'>
         <Markdown>{content}</Markdown>
-      </Container>
+      </div>
     </ResponsiveContainer>
   );
 };

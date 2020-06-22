@@ -1,26 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Dropdown } from 'semantic-ui-react';
+import { Dropdown } from 'react-bootstrap';
 
-export default function MainMenuFragment({ isMobile }) {
+export default function MainDropdownFragment({ isMobile }) {
   return (
     <React.Fragment>
-      <Menu.Item as={Link} to='/' className='mainMenuItem'>
+      <Dropdown.Item as={Link} to='/' className='mainDropdownItem'>
         Home
-      </Menu.Item>
+      </Dropdown.Item>
 
-      <Menu.Item as={Link} to='/optimization' className='mainMenuItem'>
+      <Dropdown.Item as={Link} to='/optimization' className='mainDropdownItem'>
         Optimization
-      </Menu.Item>
-      <Menu.Item as={Link} to='/work' className='mainMenuItem'>
+      </Dropdown.Item>
+      <Dropdown.Item as={Link} to='/work' className='mainDropdownItem'>
         Abridged CV
-      </Menu.Item>
+      </Dropdown.Item>
       <Dropdown
         pointing
         className='link item mainDropdownItem'
         text='Case Studies'
       >
-        <Dropdown.Menu>
+        <Dropdown.Dropdown>
           <Dropdown.Item as={Link} to='/thespreadsheet'>
             The Spreadsheet
           </Dropdown.Item>
@@ -32,28 +32,8 @@ export default function MainMenuFragment({ isMobile }) {
           <Dropdown.Item as={Link} to='/theproductlifecycle'>
             The Product Lifecycle
           </Dropdown.Item>
-        </Dropdown.Menu>
+        </Dropdown.Dropdown>
       </Dropdown>
-
-      {/* {!isMobile ? (
-        <Menu.Item position='right'>
-          <Button as='a' inverted>
-            Log In
-          </Button>
-          <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-            Sign Up
-          </Button>
-        </Menu.Item>
-      ) : (
-        <React.Fragment>
-          <Menu.Item as={Link} to='/portfolio' className='mainMenuItem'>
-            Log In
-          </Menu.Item>
-          <Menu.Item as={Link} to='/work' className='mainMenuItem'>
-            Sign Up
-          </Menu.Item>
-        </React.Fragment>
-      )} */}
     </React.Fragment>
   );
 }

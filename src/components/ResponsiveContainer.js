@@ -1,25 +1,19 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import DesktopContainer from './DesktopContainer';
-import MobileContainer from './MobileContainer';
 import Footer from './Footer';
 import FooterContent from '../content/FooterContent';
 
+import Container from 'react-bootstrap/Container';
+
 const ResponsiveContainer = ({ children }) => (
   <div>
-    <DesktopContainer>
+    <Container>
       {children}
       <Footer>
         <FooterContent />
       </Footer>
-    </DesktopContainer>
-    <MobileContainer>
-      {children}
-      <Footer>
-        <FooterContent />
-      </Footer>
-    </MobileContainer>
+    </Container>
   </div>
 );
 
