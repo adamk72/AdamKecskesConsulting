@@ -24,7 +24,7 @@ const MainSiteHeader = ({ mobile }) => (
       Specializing in No-Code &amp; Low-code Operations
     </h4>
     <h3>
-      <SocialList inverted={true} />
+      <SocialList />
     </h3>
   </Container>
 );
