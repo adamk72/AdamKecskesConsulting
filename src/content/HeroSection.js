@@ -22,9 +22,7 @@ const HeroSection = ({ mobile }) => (
     >
       Specializing in No-Code &amp; Low-code Operations
     </h4>
-    <h3>
-      <SocialList />
-    </h3>
+    <SocialList />
   </Container>
 );
 
