@@ -7,8 +7,7 @@ const HeroSection = ({ mobile }) => (
   <Container>
     <h1
       style={{
-        fontSize: mobile ? '2em' : '4em',
-        marginTop: mobile ? '0.5em' : '1em',
+        marginTop: '0em',
       }}
     >
       Adam Kecskes
