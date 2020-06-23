@@ -25,7 +25,7 @@ export function getSocialInfo() {
       },
       {
         href: 'tel://512-662-2969',
-        icon: [<FaLinkedin />],
+        icon: [<FaPhone />],
         text: '512-662-2969',
       },
     ],
