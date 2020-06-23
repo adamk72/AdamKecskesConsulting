@@ -4,8 +4,7 @@ const sociallistReducer = (state = {}, action) => {
   console.log('redcuer called', state, action);
   switch (action.type) {
     case GET_SOCIAL_INFO:
-      state = action.payload;
-      return;
+      return action;
     default:
       return state;
   }

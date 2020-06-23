@@ -21,10 +21,10 @@ const SocialList = ({ socialInfo }) => {
   );
 };
 
-const mapStateToProps = (state, ownProps) => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    socialInfo: getSocialInfo(),
+    socialInfo: dispatch(getSocialInfo()),
   };
 };
 
-export default connect(mapStateToProps)(SocialList);
+export default connect(null, mapDispatchToProps)(SocialList);
