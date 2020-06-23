@@ -109,6 +109,9 @@ body #root .mainMenuItem:hover {
   border-bottom: 2px solid var(--royal-color);
   color: var(--secondary-color-inverted);
 }
+.mainDropdownItem {
+  color: black;
+}
 body #root .mainDropdownItem:hover {
   color: var(--secondary-color-inverted);
   border-bottom: 2px solid var(--royal-color);

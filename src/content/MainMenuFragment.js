@@ -1,25 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Dropdown } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 export default function MainDropdownFragment({ isMobile }) {
   return (
-    <React.Fragment>
-      <Dropdown.Item as={Link} to='/' className='mainDropdownItem'>
-        Home
-      </Dropdown.Item>
-
-      <Dropdown.Item as={Link} to='/optimization' className='mainDropdownItem'>
-        Optimization
-      </Dropdown.Item>
-      <Dropdown.Item as={Link} to='/work' className='mainDropdownItem'>
-        Abridged CV
-      </Dropdown.Item>
-      <Dropdown
-        pointing
-        className='link item mainDropdownItem'
-        text='Case Studies'
-      >
+    <Dropdown>
+      <LinkContainer to='/'>
+        <Dropdown.Item as={Link} className='mainDropdownItem'>
+          Home
+        </Dropdown.Item>
+      </LinkContainer>
+      <LinkContainer to='/optimization'>
+        <Dropdown.Item
+          as={Link}
+          to='/optimization'
+          className='mainDropdownItem'
+        >
+          Optimization
+        </Dropdown.Item>
+      </LinkContainer>
+      <LinkContainer to='/work'>
+        <Dropdown.Item as={Link} to='/work' className='mainDropdownItem'>
+          Abridged CV
+        </Dropdown.Item>
+      </LinkContainer>
+      {/* <Dropdown className='link item mainDropdownItem' text='Case Studies'>
         <Dropdown.Dropdown>
           <Dropdown.Item as={Link} to='/thespreadsheet'>
             The Spreadsheet
@@ -33,7 +39,7 @@ export default function MainDropdownFragment({ isMobile }) {
             The Product Lifecycle
           </Dropdown.Item>
         </Dropdown.Dropdown>
-      </Dropdown>
-    </React.Fragment>
+      </Dropdown> */}
+    </Dropdown>
   );
 }
