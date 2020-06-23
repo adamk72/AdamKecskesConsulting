@@ -7,7 +7,7 @@ import { getSocialInfo } from '../actions';
 
 const SocialList = ({ socialInfo }) => {
   return (
-    <ButtonToolbar horizontal>
+    <ButtonToolbar>
       {socialInfo.ContentList.map((item, index) => (
         <ButtonGroup className='mr-1'>
           <Button href={item.href}>
