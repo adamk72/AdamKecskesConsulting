@@ -4,11 +4,8 @@ import Showcase from './Showcase';
 import Main from './Main';
 import SegmentDivider from '../components/SegmentDivider';
 import MainSiteHeader from './MainSiteHeader';
-import MainMenuFragment from './MainMenuFragment';
-
 const Homepage = () => (
   <ResponsiveContainer>
-    <MainMenuFragment />
     <MainSiteHeader />
     <SegmentDivider content='Who is &hellip; ?' />
     <Showcase />

@@ -11,7 +11,7 @@ const FooterContent = () => {
             <h4>Contact</h4>
             <SocialList />
           </Col>
-          <Col>
+          {/* <Col>
             <h4>Services</h4>
             <ListGroup>
               <ListGroup.Item as='a'>Operational Evaluations</ListGroup.Item>
@@ -23,7 +23,7 @@ const FooterContent = () => {
                 Entropy Detection &amp; Management
               </ListGroup.Item>
             </ListGroup>
-          </Col>
+          </Col> */}
           <Col>
             <h4>Other</h4>
             <Copyright />

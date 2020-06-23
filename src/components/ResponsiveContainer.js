@@ -2,19 +2,21 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Footer from './Footer';
+import Header from './Header';
 import FooterContent from '../content/FooterContent';
-
+import MainMenuFragment from '../content/MainMenuFragment';
 import Container from 'react-bootstrap/Container';
 
 const ResponsiveContainer = ({ children }) => (
-  <div>
-    <Container>
-      {children}
-      <Footer>
-        <FooterContent />
-      </Footer>
-    </Container>
-  </div>
+  <Container>
+    <Header>
+      <MainMenuFragment />
+    </Header>
+    {children}
+    <Footer>
+      <FooterContent />
+    </Footer>
+  </Container>
 );
 
 ResponsiveContainer.propTypes = {

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = ({ children }) => {
+const Header = ({ children }) => {
   return (
-    <div id='footer'>
+    <div id='header'>
       <div style={{ padding: '5em 0em' }}>{children}</div>
     </div>
   );
 };
 
-export default Footer;
+export default Header;
