@@ -4,7 +4,8 @@ import { FaAt, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
 
 export function getSocialInfo() {
   // this is static date; in the future I may bind it to something more dynamic.
-  const payload = {
+  return {
+    type: GET_SOCIAL_INFO,
     IconList: [<FaAt />, <FaGithub />, <FaLinkedin />, <FaPhone />],
     ContentList: [
       {
@@ -30,5 +31,4 @@ export function getSocialInfo() {
       },
     ],
   };
-  return { type: GET_SOCIAL_INFO, payload };
 }
