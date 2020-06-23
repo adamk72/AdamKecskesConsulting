@@ -5,8 +5,8 @@ import App from './app';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers';
-import './scss/index.scss';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import './scss/index.scss';
 
 const store = createStore(rootReducer, composeWithDevTools());
 

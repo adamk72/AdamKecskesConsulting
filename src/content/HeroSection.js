@@ -1,28 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
+import { Row, Container } from 'react-bootstrap';
 import SocialList from '../components/SocialList';
 
 const HeroSection = ({ mobile }) => (
   <Container>
-    <h1
-      style={{
-        marginTop: '0em',
-      }}
-    >
-      Adam Kecskes
-    </h1>
-
-    <h4
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.13em' : '.25em',
-      }}
-    >
-      Specializing in No-Code &amp; Low-code Operations
-    </h4>
-    <SocialList />
+    <Row className='justify-content-md-center'>
+      <h1 bsClass='header title' className='header title'>
+        Adam Kecskes
+      </h1>
+      <h4 className='header sub-title'>
+        Specializing in No-Code &amp; Low-code Operations
+      </h4>
+      <SocialList />
+    </Row>
   </Container>
 );
 
