@@ -1,7 +1,7 @@
 import React from 'react';
 import Copyright from '../apis/Copyright';
 import SocialList from '../components/SocialList';
-import { Container, ListGroup, Row, Col } from 'react-bootstrap';
+import { Container, /*ListGroup,*/ Row, Col } from 'react-bootstrap';
 const FooterContent = () => {
   return (
     <React.Fragment>
