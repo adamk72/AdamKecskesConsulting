@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Container from 'react-bootstrap/Container';
 import SocialList from '../components/SocialList';
 
-const MainSiteHeader = ({ mobile }) => (
+const HeroSection = ({ mobile }) => (
   <Container>
     <h1
       style={{
@@ -29,8 +29,8 @@ const MainSiteHeader = ({ mobile }) => (
   </Container>
 );
 
-MainSiteHeader.propTypes = {
+HeroSection.propTypes = {
   mobile: PropTypes.bool,
 };
 
-export default MainSiteHeader;
+export default HeroSection;

@@ -3,7 +3,7 @@ import SimpleCard from '../components/SimpleCard';
 
 import { Card, Row, Col, Container, Image } from 'react-bootstrap';
 
-const Showcase = () => {
+const ShowcaseSection = () => {
   return (
     <Container id='showcase' style={{ padding: '4em 4em' }}>
       <Container>
@@ -39,4 +39,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default ShowcaseSection;

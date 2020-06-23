@@ -1,16 +1,16 @@
 import React from 'react';
 import ResponsiveContainer from '../components/ResponsiveContainer';
-import Showcase from './Showcase';
-import Main from './Main';
 import SegmentDivider from '../components/SegmentDivider';
-import MainSiteHeader from './MainSiteHeader';
+import HeroSection from './HeroSection';
+import MainSection from './MainSection';
+import ShowcaseSection from './ShowcaseSection';
 const Homepage = () => (
   <ResponsiveContainer>
-    <MainSiteHeader />
+    <HeroSection />
     <SegmentDivider content='Who is &hellip; ?' />
-    <Showcase />
+    <ShowcaseSection />
     <SegmentDivider content="I'm a problem solver&hellip;" />
-    <Main />
+    <MainSection />
   </ResponsiveContainer>
 );
 

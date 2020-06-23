@@ -4,13 +4,13 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import FooterContent from '../content/FooterContent';
-import MainMenuFragment from '../content/MainMenuFragment';
 import Container from 'react-bootstrap/Container';
+import HeaderNav from './HeaderNav';
 
 const ResponsiveContainer = ({ children }) => (
   <Container>
     <Header>
-      <MainMenuFragment />
+      <HeaderNav />
     </Header>
     {children}
     <Footer>
