@@ -21,7 +21,7 @@ export default function MainDropdownFragment({ isMobile }) {
         </Dropdown.Item>
       </LinkContainer>
       <LinkContainer to='/work'>
-        <Dropdown.Item as={Link} to='/work' className='mainDropdownItem'>
+        <Dropdown.Item as={Link} className='mainDropdownItem'>
           Abridged CV
         </Dropdown.Item>
       </LinkContainer>
