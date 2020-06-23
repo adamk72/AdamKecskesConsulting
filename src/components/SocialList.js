@@ -11,7 +11,7 @@ const SocialList = ({ socialInfo }) => {
         {socialInfo.ContentList.map((item, index) => (
           <ListGroup.Item key={index}>
             <Button href={item.href}>
-              {socialInfo.IconList[index]} {item.text}
+              {item.icon} {item.text}
             </Button>
           </ListGroup.Item>
         ))}
