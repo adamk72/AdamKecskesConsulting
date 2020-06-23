@@ -6,17 +6,16 @@ import { getSocialInfo } from '../actions';
 
 const SocialList = ({ socialInfo }) => {
   return (
-    <React.Fragment>
-      <ListGroup>
-        {socialInfo.ContentList.map((item, index) => (
-          <ListGroup.Item key={index}>
-            <Button href={item.href}>
-              {item.icon} {item.text}
-            </Button>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-    </React.Fragment>
+    <ListGroup>
+      {socialInfo.ContentList.map((item, index) => (
+        <ListGroup.Item key={index}>
+          <Button href={item.href}>
+            {item.icon[0]} {item.text}{' '}
+            {/*had to add index to item.icon lest the compiler think it's an arry to be keyd*/}
+          </Button>
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
   );
 };
 
