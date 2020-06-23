@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Button from 'react-bootstrap/Button';
 import { getSocialInfo } from '../actions';
 
 const SocialList = ({ socialInfo }) => {
-  console.log(socialInfo);
   return (
     <React.Fragment>
       <ListGroup>
