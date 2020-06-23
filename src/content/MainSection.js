@@ -20,7 +20,7 @@ const domains = [
   { key: 8, text: 'Technical Staffing' },
 ];
 
-const Main = (props) => {
+const MainSection = (props) => {
   return (
     <Container style={{ padding: '3.5em 0em' }}>
       <Container>
@@ -136,4 +136,4 @@ const Main = (props) => {
   );
 };
 
-export default Main;
+export default MainSection;
