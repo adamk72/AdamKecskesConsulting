@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 const CircularSegment = ({ image }) => {
   return (
     <React.Fragment>
-      <Image src={image} roundedCircle />
+      <Image fluid src={image} roundedCircle />
     </React.Fragment>
   );
 };
