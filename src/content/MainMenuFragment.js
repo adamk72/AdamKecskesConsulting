@@ -12,11 +12,7 @@ export default function MainDropdownFragment({ isMobile }) {
         </Dropdown.Item>
       </LinkContainer>
       <LinkContainer to='/optimization'>
-        <Dropdown.Item
-          as={Link}
-          to='/optimization'
-          className='mainDropdownItem'
-        >
+        <Dropdown.Item as={Link} className='mainDropdownItem'>
           Optimization
         </Dropdown.Item>
       </LinkContainer>
