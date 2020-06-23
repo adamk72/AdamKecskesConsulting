@@ -11,16 +11,18 @@ export default function HeaderNav({ isMobile }) {
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
           <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/work'>Link</Nav.Link>
-          <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-            <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.2'>
-              Another action
+          <Nav.Link href='/work'>CV</Nav.Link>
+          <Nav.Link href='/optimization'>Work</Nav.Link>
+          <NavDropdown title='Case Studies' id='basic-nav-dropdown'>
+            <NavDropdown.Item href='/thespreadsheet'>
+              The Spreadsheet
             </NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
+            <NavDropdown.Item href='/automatingreporting'>
+              Automated Reporting
+            </NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='#action/3.4'>
-              Separated link
+            <NavDropdown.Item href='/theproductlifecycle'>
+              The Product Lifecycle
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
