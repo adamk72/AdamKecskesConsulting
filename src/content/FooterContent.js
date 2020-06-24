@@ -7,23 +7,10 @@ const FooterContent = () => {
     <React.Fragment>
       <Container>
         <Row>
-          <Col>
+          <Col md={7}>
             <h4>Contact</h4>
             <SocialList />
           </Col>
-          {/* <Col>
-            <h4>Services</h4>
-            <ListGroup>
-              <ListGroup.Item as='a'>Operational Evaluations</ListGroup.Item>
-              <ListGroup.Item as='a'>Process Improvement</ListGroup.Item>
-              <ListGroup.Item as='a'>
-                Software Architecture Reviews
-              </ListGroup.Item>
-              <ListGroup.Item as='a'>
-                Entropy Detection &amp; Management
-              </ListGroup.Item>
-            </ListGroup>
-          </Col> */}
           <Col>
             <h4>Other</h4>
             <Copyright />

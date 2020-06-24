@@ -9,7 +9,7 @@ const TeamSection = (props) => {
         <Col className='mobile hidden'>
           <CircularSegment image='images/teamwork.png' />
         </Col>
-        <Col>
+        <Col md={8}>
           <SimpleCard className='top' title='We Are Better Together'>
             <p>
               The best teams I’ve lead or worked for have been the ones where we

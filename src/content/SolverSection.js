@@ -9,7 +9,7 @@ const SolverSection = (props) => {
         <Col className='mobile hidden'>
           <CircularSegment image='images/computer.png' />
         </Col>
-        <Col>
+        <Col md={8}>
           <SimpleCard className='top' title='I Ask a Lot of Questions'>
             <p>
               I'm a troubleshooter; instead of putting up with the status quo,

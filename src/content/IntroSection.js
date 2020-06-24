@@ -24,7 +24,7 @@ const IntroSection = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col md={8}>
           <SimpleCard
             className='top'
             body="Hi! I'm Adam Kecskes, and I've done a lot to help companies thrive over the 20 years of my career in technology. Here's how I consider myself; I'm a:"

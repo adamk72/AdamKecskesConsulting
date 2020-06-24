@@ -1,11 +1,33 @@
-h1 {
-  font-size: 3.5em;
-  font-weight: bold;
-  font-family: 'Roboto Slab';
-}
+.heroSection {
+  text-align: center;
 
-h4 {
-  font-family: 'Montserrat';
-  font-weight: 'normal';
-  margin-bottom: 0;
+  &.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+  .spacer {
+    display: block;
+  }
+
+  .header.top-item {
+    margin-bottom: 20px;
+  }
+
+  .header.bottom-item {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+    min-height: 1rem;
+    margin-top: 3m;
+  }
+
+  h4 {
+    font-family: 'Montserrat';
+    font-weight: 'normal';
+  }
 }

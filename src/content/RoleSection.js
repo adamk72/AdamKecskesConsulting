@@ -19,39 +19,39 @@ const SolverSection = (props) => {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col md={8}>
           <SimpleCard title='I Can Fill Many Roles' body=''>
             <p>
-              I've worked for 3 large cap companies and 3 startup companies
-              <br />
-              all at various stages of maturity,&nbsp;&nbsp;giving me a broad
-              scope
-              <br />
+              I've worked for 3 large cap companies and 3 startup companies all
+              at various stages of maturity,&nbsp;&nbsp;giving me a broad scope
               of business opportunites to learn from.
-              <br />
-              <br />
-              Some of the domains I've worked in:
             </p>
+            <p>Some of the domains I've worked in:</p>
           </SimpleCard>
-          <ListGroup className='announce' size='huge'>
-            {domains.map((domain) => {
-              return (
-                <ListGroup.Item key={domain.key}>
-                  {' '}
-                  <FaChevronRight />
-                  {domain.text}
-                </ListGroup.Item>
-              );
-            })}
-          </ListGroup>
+          <Container>
+            <Row>
+              <Col>
+                <ListGroup>
+                  {domains.map((domain) => {
+                    return (
+                      <ListGroup.Item
+                        key={domain.key}
+                        style={{ borderStyle: 'none' }}
+                      >
+                        {' '}
+                        <FaChevronRight />
+                        {domain.text}
+                      </ListGroup.Item>
+                    );
+                  })}
+                </ListGroup>
+              </Col>
+            </Row>
+          </Container>
         </Col>
-        <Col className='mobile hidden'></Col>
-        <Col className='mobile hidden'>
+        <Col>
           <CircularSegment image='images/flow.png' />
         </Col>
-      </Row>
-      <Row>
-        <Col></Col>
       </Row>
     </Container>
   );
