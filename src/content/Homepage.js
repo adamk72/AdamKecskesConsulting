@@ -1,6 +1,6 @@
 import React from 'react';
 import ResponsiveContainer from '../components/ResponsiveContainer';
-import SegmentDivider from '../components/SegmentDivider';
+import SectionDivider from '../components/SectionDivider';
 import HeroSection from './HeroSection';
 import IntroSection from './IntroSection';
 import SolverSection from './SolverSection';
@@ -9,13 +9,13 @@ import RoleSection from './RoleSection';
 const Homepage = () => (
   <ResponsiveContainer>
     <HeroSection />
-    <SegmentDivider content='Who is &hellip; ?' />
+    <SectionDivider content='Who is &hellip; ?' />
     <IntroSection />
-    <SegmentDivider content="I'm a problem solver&hellip;" />
+    <SectionDivider content="I'm a problem solver&hellip;" />
     <SolverSection />
-    <SegmentDivider content='&hellip;With a Wide Range of Experiences&hellip;' />
+    <SectionDivider content='&hellip;With a Wide Range of Experiences&hellip;' />
     <RoleSection />
-    <SegmentDivider content='&hellip;and I play well with others.' />
+    <SectionDivider content='&hellip;and I play well with others.' />
     <TeamSection />
   </ResponsiveContainer>
 );

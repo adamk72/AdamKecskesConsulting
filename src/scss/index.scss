@@ -1,7 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
 // @import './style';
 @import '/heroSection';
+@import '/sectionDivider';
 
+:before,
+:after {
+  box-sizing: inherit;
+}
 // .ui.divider {
 //   margin: 1rem 0;
 //   line-height: 1;
