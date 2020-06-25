@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleCard from '../components/SimpleCard';
+import SimpleCard from '../../components/SimpleCard';
 import { Card, Image } from 'react-bootstrap';
 
 export const CardImage = [
@@ -18,7 +18,7 @@ export const CardImage = [
 export const CardText = [
   <>
     <SimpleCard
-      className='top'
+      className='top justify'
       body="Hi! I'm Adam Kecskes, and I've done a lot to help companies thrive over the 20 years of my career in technology. Here's how I consider myself; I'm a:"
     />
     <SimpleCard className='announce' title='Operational Optimizer' />
