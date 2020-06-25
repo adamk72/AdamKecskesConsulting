@@ -6,7 +6,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 export default function HeaderNav({ isMobile }) {
   return (
     <Navbar bg='light' expand='lg'>
-      <Navbar.Brand href='#home'>Adam Kecskes</Navbar.Brand>
+      <Navbar.Brand href='/'>Adam Kecskes</Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
