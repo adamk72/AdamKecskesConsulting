@@ -29,8 +29,7 @@ export const RoleRightSide = [
     <ListGroup>
       {domains.map((domain) => {
         return (
-          <ListGroup.Item key={domain.key} style={{ borderStyle: 'none' }}>
-            {' '}
+          <ListGroup.Item key={domain.key}>
             <FaChevronRight />
             {domain.text}
           </ListGroup.Item>
