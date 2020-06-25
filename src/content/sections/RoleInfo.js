@@ -1,7 +1,7 @@
 import React from 'react';
 import SimpleCard from '../../components/SimpleCard';
 import { ListGroup } from 'react-bootstrap';
-import CircularSegment from '../../components/CircularSegment';
+import CircularEnclose from '../../components/CircularEnclose';
 import { FaChevronRight } from 'react-icons/fa';
 const domains = [
   { key: 1, text: 'Server & Client Agile Software Development' },
@@ -42,6 +42,6 @@ export const RoleRightSide = [
 ];
 export const RoleLeftSide = [
   <>
-    <CircularSegment image='images/flow.png' />
+    <CircularEnclose image='images/flow.png' />
   </>,
 ];

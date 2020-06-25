@@ -5,7 +5,7 @@ const TwoColumnSection = ({ leftSide = [], rightSide = [] }, id = null) => {
   return (
     <>
       <Container id={id} style={{ padding: '4em 4em' }}>
-        <Row>
+        <Row className='section'>
           <Col>
             {Array.prototype.map.call(leftSide, (item) => {
               return <>{item}</>;

@@ -1,6 +1,6 @@
 import React from 'react';
 import SimpleCard from '../../components/SimpleCard';
-import CircularSegment from '../../components/CircularSegment';
+import CircularEnclose from '../../components/CircularEnclose';
 
 export const TeamLeftSide = [
   <SimpleCard className='justify' title='We Are Better Together'>
@@ -28,6 +28,6 @@ export const TeamLeftSide = [
 ];
 export const TeamRightSide = [
   <>
-    <CircularSegment image='images/teamwork.png' />
+    <CircularEnclose image='images/teamwork.png' />
   </>,
 ];

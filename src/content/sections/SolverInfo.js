@@ -1,10 +1,10 @@
 import React from 'react';
 import SimpleCard from '../../components/SimpleCard';
-import CircularSegment from '../../components/CircularSegment';
+import CircularEnclose from '../../components/CircularEnclose';
 
 export const SolverRightSide = [
   <>
-    <CircularSegment image='images/computer.png' />
+    <CircularEnclose image='images/computer.png' />
   </>,
 ];
 export const SolverLeftSide = [
