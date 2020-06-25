@@ -5,11 +5,8 @@
 @import '/cards';
 @import '/circularEnclose';
 @import '/allSections';
+@import '/introInfo';
 
-:before,
-:after {
-  box-sizing: inherit;
-}
 // .ui.divider {
 //   margin: 1rem 0;
 //   line-height: 1;
