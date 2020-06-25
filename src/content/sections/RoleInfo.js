@@ -1,8 +1,7 @@
 import React from 'react';
 import SimpleCard from '../../components/SimpleCard';
-import { ListGroup, Card, Accordion, Button } from 'react-bootstrap';
+import { Card, Accordion, Button } from 'react-bootstrap';
 import CircularEnclose from '../../components/CircularEnclose';
-import { FaChevronRight } from 'react-icons/fa';
 const techDomains = [
   { key: 1, text: 'Server & Client Agile Software Development' },
   { key: 3, text: 'UX/UI Design Implementation' },
