@@ -26,21 +26,18 @@ const Homepage = () => (
       leftSide={SolverLeftSide}
       rightSide={SolverRightSide}
       id='solverSection'
-      dir='right'
     />
     <SectionDivider content='&hellip;With a Wide Range of Experiences&hellip;' />
     <TwoColumnSection
       leftSide={RoleLeftSide}
       rightSide={RoleRightSide}
       id='roleSection'
-      dir='left'
     />
     <SectionDivider content='&hellip;and I play well with others.' />
     <TwoColumnSection
       leftSide={TeamLeftSide}
       rightSide={TeamRightSide}
       id='teamSection'
-      dir='right'
     />
   </ResponsiveContainer>
 );

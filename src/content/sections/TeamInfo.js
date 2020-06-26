@@ -20,9 +20,11 @@ export const TeamLeftSide = [
       Principles such as:
     </p>
     <ul>
-      <li>Transparency &amp; Honesty</li>
-      <li>Safety both in the environment and in failure</li>
-      <li>Recognize leadership and provide opportunities for improvement</li>
+      <li key='1'>Transparency &amp; Honesty</li>
+      <li key='2'>Safety both in the environment and in failure</li>
+      <li key='3'>
+        Recognize leadership and provide opportunities for improvement
+      </li>
     </ul>
   </SimpleCard>,
 ];

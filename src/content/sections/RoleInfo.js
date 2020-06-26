@@ -39,8 +39,8 @@ export const RoleRightSide = [
         <Accordion.Collapse eventKey='1'>
           <Card.Body>
             <ul>
-              {techDomains.map((domain) => {
-                return <li>{domain.text}</li>;
+              {techDomains.map((domain, index) => {
+                return <li key={index}>{domain.text}</li>;
               })}
             </ul>
           </Card.Body>
@@ -55,8 +55,8 @@ export const RoleRightSide = [
         <Accordion.Collapse eventKey='2'>
           <Card.Body>
             <ul>
-              {pmDomains.map((domain) => {
-                return <li>{domain.text}</li>;
+              {pmDomains.map((domain, index) => {
+                return <li key={index}>{domain.text}</li>;
               })}
             </ul>
           </Card.Body>
