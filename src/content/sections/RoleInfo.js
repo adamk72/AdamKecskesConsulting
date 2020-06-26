@@ -5,12 +5,13 @@ import CircularEnclose from '../../components/CircularEnclose';
 const techDomains = [
   { key: 1, text: 'Server & Client Agile Software Development' },
   { key: 3, text: 'UX/UI Design Implementation' },
-  { key: 2, text: 'Product Lifecycle Origination' },
+  { key: 2, text: 'Product Development Lifecycle' },
   { key: 9, text: 'Information Archiecture' },
   { key: 7, text: 'Quality Assurance' },
 ];
 
 const pmDomains = [
+  { key: 11, text: 'Software Team Management' },
   { key: 8, text: 'Technical Staffing' },
   { key: 4, text: 'Optimizing Operations' },
   { key: 5, text: 'Program Management' },
@@ -28,16 +29,6 @@ export const RoleRightSide = [
       </p>
       <p>Some of the domains I've worked in:</p>
     </SimpleCard>
-    {/* <ListGroup>
-      {domains.map((domain) => {
-        return (
-          <ListGroup.Item key={domain.key}>
-            <FaChevronRight />
-            {domain.text}
-          </ListGroup.Item>
-        );
-      })}
-    </ListGroup> */}
     <Accordion defaultActiveKey='0'>
       <Card>
         <Card.Header>
@@ -58,7 +49,7 @@ export const RoleRightSide = [
       <Card>
         <Card.Header>
           <Accordion.Toggle as={Button} variant='link' eventKey='2'>
-            Program Management
+            Management
           </Accordion.Toggle>
         </Card.Header>
         <Accordion.Collapse eventKey='2'>
