@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Row, Container } from 'react-bootstrap';
 import SocialList from '../components/SocialList';
 
-const HeroSection = ({ mobile }) => (
-  <Container className='heroSection'>
+const MainTitle = ({ mobile }) => (
+  <Container className='mainTitle'>
     <Row className='justify-content-center header title top-item' as='h1'>
       Adam Kecskes
     </Row>
@@ -17,8 +17,8 @@ const HeroSection = ({ mobile }) => (
   </Container>
 );
 
-HeroSection.propTypes = {
+MainTitle.propTypes = {
   mobile: PropTypes.bool,
 };
 
-export default HeroSection;
+export default MainTitle;
