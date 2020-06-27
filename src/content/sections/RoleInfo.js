@@ -65,7 +65,6 @@ export const RoleRightSide = {
           </Accordion.Collapse>
         </Card>
       </Accordion>
-      ,
     </>,
   ],
 };
