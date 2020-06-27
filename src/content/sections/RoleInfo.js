@@ -19,55 +19,61 @@ const pmDomains = [
   { key: 10, text: 'Knowledge Management' },
 ];
 
-export const RoleRightSide = [
-  <>
-    <SimpleCard title='I Can Fill Many Roles' body='' className='justify'>
-      <p>
-        I've worked for 3 large cap companies and 3 startup companies all at
-        various stages of maturity,&nbsp;&nbsp;giving me a broad scope of
-        business opportunites to learn from.
-      </p>
-      <p>Some of the domains I've worked in:</p>
-    </SimpleCard>
-    <Accordion defaultActiveKey='0'>
-      <Card>
-        <Card.Header>
-          <Accordion.Toggle as={Button} variant='link' eventKey='1'>
-            Technology
-          </Accordion.Toggle>
-        </Card.Header>
-        <Accordion.Collapse eventKey='1'>
-          <Card.Body>
-            <ul>
-              {techDomains.map((domain, index) => {
-                return <li key={index}>{domain.text}</li>;
-              })}
-            </ul>
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-      <Card>
-        <Card.Header>
-          <Accordion.Toggle as={Button} variant='link' eventKey='2'>
-            Management
-          </Accordion.Toggle>
-        </Card.Header>
-        <Accordion.Collapse eventKey='2'>
-          <Card.Body>
-            <ul>
-              {pmDomains.map((domain, index) => {
-                return <li key={index}>{domain.text}</li>;
-              })}
-            </ul>
-          </Card.Body>
-        </Accordion.Collapse>
-      </Card>
-    </Accordion>
-    ,
-  </>,
-];
-export const RoleLeftSide = [
-  <>
-    <CircularEnclose image='images/flow.png' />
-  </>,
-];
+export const RoleRightSide = {
+  type: 'text',
+  body: [
+    <>
+      <SimpleCard title='I Can Fill Many Roles' body='' className='justify'>
+        <p>
+          I've worked for 3 large cap companies and 3 startup companies all at
+          various stages of maturity,&nbsp;&nbsp;giving me a broad scope of
+          business opportunites to learn from.
+        </p>
+        <p>Some of the domains I've worked in:</p>
+      </SimpleCard>
+      <Accordion defaultActiveKey='0'>
+        <Card>
+          <Card.Header>
+            <Accordion.Toggle as={Button} variant='link' eventKey='1'>
+              Technology
+            </Accordion.Toggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey='1'>
+            <Card.Body>
+              <ul>
+                {techDomains.map((domain, index) => {
+                  return <li key={index}>{domain.text}</li>;
+                })}
+              </ul>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+        <Card>
+          <Card.Header>
+            <Accordion.Toggle as={Button} variant='link' eventKey='2'>
+              Management
+            </Accordion.Toggle>
+          </Card.Header>
+          <Accordion.Collapse eventKey='2'>
+            <Card.Body>
+              <ul>
+                {pmDomains.map((domain, index) => {
+                  return <li key={index}>{domain.text}</li>;
+                })}
+              </ul>
+            </Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
+      ,
+    </>,
+  ],
+};
+export const RoleLeftSide = {
+  type: 'image',
+  body: [
+    <>
+      <CircularEnclose image='images/flow.png' />
+    </>,
+  ],
+};

@@ -1,18 +1,31 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
+/*
+Requires that the caller pass to each side an object of the form:
+{ 
+  type: [image|<any thing else>]
+  body: <array>
+}
 
-const TwoColumnSection = ({ leftSide = [], rightSide = [], id = null }) => {
+The function will evalute any 'image' values and if the screen size is small enough,
+set the respective column to 'display: none'
+*/
+const TwoColumnSection = ({ leftSide = {}, rightSide = {}, id = null }) => {
   return (
     <>
       <Container id={id}>
         <Row className='section'>
-          <Col>
-            {Array.prototype.map.call(leftSide, (item, index) => {
+          <Col
+            className={leftSide.type === 'image' ? 'd-none d-md-inline' : null}
+          >
+            {Array.prototype.map.call(leftSide.body, (item, index) => {
               return <div key={index}>{item}</div>;
             })}
           </Col>
-          <Col>
-            {Array.prototype.map.call(rightSide, (item, index) => {
+          <Col
+            className={rightSide.type === 'image' ? 'd-none d-md-inline' : null}
+          >
+            {Array.prototype.map.call(rightSide.body, (item, index) => {
               return <div key={index}>{item}</div>;
             })}
           </Col>
