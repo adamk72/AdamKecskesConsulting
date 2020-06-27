@@ -32,7 +32,7 @@ export const TeamLeftSide = {
   ],
 };
 export const TeamRightSide = {
-  type: 'image',
+  type: 'hideOnMobile',
   body: [
     <>
       <CircularEnclose image='images/teamwork.png' />

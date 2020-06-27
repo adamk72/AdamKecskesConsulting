@@ -70,7 +70,7 @@ export const RoleRightSide = {
   ],
 };
 export const RoleLeftSide = {
-  type: 'image',
+  type: 'hideOnMobile',
   body: [
     <>
       <CircularEnclose image='images/flow.png' />

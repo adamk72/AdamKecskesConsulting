@@ -16,14 +16,24 @@ const TwoColumnSection = ({ leftSide = {}, rightSide = {}, id = null }) => {
       <Container id={id}>
         <Row className='section'>
           <Col
-            className={leftSide.type === 'image' ? 'd-none d-md-inline' : null}
+            className={
+              leftSide.type === 'hideOnMobile'
+                ? 'col-sm d-none d-md-inline'
+                : 'col-sm'
+            }
           >
             {Array.prototype.map.call(leftSide.body, (item, index) => {
               return <div key={index}>{item}</div>;
             })}
           </Col>
+
           <Col
-            className={rightSide.type === 'image' ? 'd-none d-md-inline' : null}
+            sm
+            className={
+              rightSide.type === 'hideOnMobile'
+                ? 'col-sm d-none d-md-inline'
+                : 'col-sm'
+            }
           >
             {Array.prototype.map.call(rightSide.body, (item, index) => {
               return <div key={index}>{item}</div>;

@@ -3,7 +3,7 @@ import SimpleCard from '../../components/SimpleCard';
 import CircularEnclose from '../../components/CircularEnclose';
 
 export const SolverRightSide = {
-  type: 'image',
+  type: 'hideOnMobile',
   body: [
     <>
       <CircularEnclose image='images/computer.png' />
