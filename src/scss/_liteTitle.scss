@@ -1,0 +1,25 @@
+.liteTitle {
+  text-align: center;
+  justify-content: center;
+
+  &.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+
+  h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Roboto Slab';
+    min-height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-family: 'Montserrat';
+    font-weight: 'normal';
+    margin-bottom: 1rem;
+  }
+}
