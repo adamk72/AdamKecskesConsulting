@@ -2,8 +2,6 @@ import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 
 const TwoColumnSection = ({ leftSide = [], rightSide = [], id = null }) => {
-  console.log(id);
-  debugger;
   return (
     <>
       <Container id={id}>
