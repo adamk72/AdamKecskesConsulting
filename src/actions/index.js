@@ -17,6 +17,7 @@ export function getSocialInfo() {
         href: 'https://github.com/adamk72',
         icon: [<FaGithub />],
         text: 'GitHub',
+        hideOnMobile: true,
       },
       {
         href: 'https://linkedin.com/in/adamkecskes/',
@@ -26,7 +27,7 @@ export function getSocialInfo() {
       {
         href: 'tel://512-662-2969',
         icon: [<FaPhone />],
-        text: '512-662-2969',
+        text: 'Phone',
       },
     ],
   };
