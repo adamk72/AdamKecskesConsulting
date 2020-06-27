@@ -1,7 +1,10 @@
-.section .list-group-item {
-  border-style: none;
-}
+.section {
+  margin: 4em 0;
+  .list-group-item {
+    border-style: none;
+  }
 
-.announce {
-  font-family: 'Roboto Slab';
+  .announce {
+    font-family: 'Roboto Slab';
+  }
 }
