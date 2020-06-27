@@ -1,10 +1,10 @@
 import React from 'react';
 // const INIT_CHILD = String.fromCharCode(8943); // centered horizontal ellipsis
 
-const SectionDivider = (props) => {
+const SectionDivider = ({ content = '\u2026' }) => {
   return (
     <div>
-      <h6 className='sectionDivider horizontal'>{props.content}</h6>
+      <h6 className='sectionDivider horizontal'>{content}</h6>
     </div>
   );
 };
