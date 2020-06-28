@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Homepage from './content/Homepage';
+import About from './content/About';
 import BasicMdPage from './components/BasicMdPage';
 import workPageContent from '../src/content/md_files/WorkExperience.md';
 import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
@@ -22,6 +23,7 @@ const App = () => {
     <main>
       <Switch>
         <Route path='/' exact component={Homepage} />
+        <Route path='/about' exact component={About} />
         <Route
           path='/portfolio'
           component={() => <BasicMdPage mdContent={portfolioPageContent} />}

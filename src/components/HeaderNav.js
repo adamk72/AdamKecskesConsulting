@@ -11,6 +11,7 @@ export default function HeaderNav({ isMobile }) {
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
           <Nav.Link href='/'>Home</Nav.Link>
+          <Nav.Link href='/about'>About</Nav.Link>
           <Nav.Link href='/work'>CV</Nav.Link>
           <Nav.Link href='/optimization'>Work</Nav.Link>
           <NavDropdown title='Case Studies' id='basic-nav-dropdown'>

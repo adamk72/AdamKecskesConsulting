@@ -4,13 +4,10 @@ import SectionDivider from '../components/SectionDivider';
 import MainTitle from './MainTitle';
 import TwoColumnSection from '../components/TwoColumnSection';
 
-import { CardImage, CardText } from '../content/sections/IntroInfo';
-import {
-  SolverLeftSide,
-  SolverRightSide,
-} from '../content/sections/SolverInfo';
-import { RoleLeftSide, RoleRightSide } from '../content/sections/RoleInfo';
-import { TeamLeftSide, TeamRightSide } from '../content/sections/TeamInfo';
+import { CardImage, CardText } from './sections/IntroInfo';
+import { SolverLeftSide, SolverRightSide } from './sections/SolverInfo';
+import { RoleLeftSide, RoleRightSide } from './sections/RoleInfo';
+import { TeamLeftSide, TeamRightSide } from './sections/TeamInfo';
 
 const Homepage = () => (
   <ResponsiveContainer>
