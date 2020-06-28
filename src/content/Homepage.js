@@ -15,7 +15,30 @@ import { TeamLeftSide, TeamRightSide } from '../content/sections/TeamInfo';
 const Homepage = () => (
   <ResponsiveContainer>
     <MainTitle />
-    And now for something completely different
+    <SectionDivider content='Who is &hellip; ?' />
+    <TwoColumnSection
+      leftSide={CardImage}
+      rightSide={CardText}
+      id='introSection'
+    />
+    <SectionDivider content="I'm a problem solver&hellip;" />
+    <TwoColumnSection
+      leftSide={SolverLeftSide}
+      rightSide={SolverRightSide}
+      id='solverSection'
+    />
+    <SectionDivider content='&hellip;With a Wide Range of Experiences&hellip;' />
+    <TwoColumnSection
+      leftSide={RoleLeftSide}
+      rightSide={RoleRightSide}
+      id='roleSection'
+    />
+    <SectionDivider content='&hellip;and I play well with others.' />
+    <TwoColumnSection
+      leftSide={TeamLeftSide}
+      rightSide={TeamRightSide}
+      id='teamSection'
+    />
   </ResponsiveContainer>
 );
 
