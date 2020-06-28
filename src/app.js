@@ -9,27 +9,20 @@ import automatingreporting from '../src/content/md_files/AutomatingTheReporting.
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import portfolioPageContent from '../src/content/md_files/Portfolio.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
-const publicPath = '/path/to/subfolder/';
-
-const routeCodes = {
-  HOME: publicPath,
-  SEARCH: `${publicPath}search`,
-  ABOUT: `${publicPath}about`,
-  WORK: `${publicPath}work`,
-};
+import __remote_path__ from './config';
 
 const App = () => {
   return (
     <main>
       <Switch>
-        <Route path='/' exact component={Homepage} />
+        <Route path={__remote_path__} exact component={Homepage} />
         <Route path='/about' exact component={About} />
         <Route
           path='/portfolio'
           component={() => <BasicMdPage mdContent={portfolioPageContent} />}
         />
         <Route
-          path={routeCodes.WORK}
+          path='/work'
           exact
           component={() => <BasicMdPage mdContent={workPageContent} />}
         />

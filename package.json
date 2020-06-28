@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "src/index.js",
-  "homepage": ".",
+  "homepage": "https://kecskes.net/k_test_site/",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
