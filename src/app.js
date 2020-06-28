@@ -8,6 +8,14 @@ import automatingreporting from '../src/content/md_files/AutomatingTheReporting.
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import portfolioPageContent from '../src/content/md_files/Portfolio.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
+const publicPath = '/path/to/subfolder/';
+
+const routeCodes = {
+  HOME: publicPath,
+  SEARCH: `${publicPath}search`,
+  ABOUT: `${publicPath}about`,
+  WORK: `${publicPath}work`,
+};
 
 const App = () => {
   return (
@@ -19,7 +27,8 @@ const App = () => {
           component={() => <BasicMdPage mdContent={portfolioPageContent} />}
         />
         <Route
-          path='/work'
+          path={routeCodes.WORK}
+          exact
           component={() => <BasicMdPage mdContent={workPageContent} />}
         />
         <Route
