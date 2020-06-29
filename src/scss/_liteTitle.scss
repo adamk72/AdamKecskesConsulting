@@ -1,6 +1,9 @@
 .liteTitle {
+  margin-bottom: 4em;
   text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
 
   &.container {
     margin-left: auto;
@@ -17,9 +20,7 @@
     margin-bottom: 1rem;
   }
 
-  h4 {
-    font-family: 'Montserrat';
-    font-weight: 'normal';
-    margin-bottom: 1rem;
+  .btn-toolbar {
+    align-self: center;
   }
 }
