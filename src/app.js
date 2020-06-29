@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Router, Route } from 'react-router-dom';
 import Homepage from './content/Homepage';
 import About from './content/About';
 import BasicMdPage from './components/BasicMdPage';
@@ -9,13 +9,12 @@ import automatingreporting from '../src/content/md_files/AutomatingTheReporting.
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import portfolioPageContent from '../src/content/md_files/Portfolio.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
-import __remote_path__ from './config';
 
 const App = () => {
   return (
     <main>
-      <Switch>
-        <Route path={__remote_path__} exact component={Homepage} />
+      <Router basename='/'>
+        <Route path='/' exact component={Homepage} />
         <Route path='/about' exact component={About} />
         <Route
           path='/portfolio'
@@ -42,7 +41,7 @@ const App = () => {
           path='/theproductlifecycle'
           component={() => <BasicMdPage mdContent={theproductlifecycle} />}
         />
-      </Switch>
+      </Router>
     </main>
   );
 };

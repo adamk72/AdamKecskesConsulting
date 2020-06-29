@@ -6,14 +6,13 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import __remote_path__ from './config';
 import './scss/index.scss';
 
 const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename={__remote_path__}>
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </Provider>,
