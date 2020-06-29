@@ -1,6 +1,5 @@
 import React from 'react';
-// import { Dropdown } from 'react-bootstrap';
-// import { LinkContainer } from 'react-router-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 export default function HeaderNav({ isMobile }) {
@@ -10,21 +9,32 @@ export default function HeaderNav({ isMobile }) {
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
-          <Nav.Link href='/'>Home</Nav.Link>
-          <Nav.Link href='/about'>About</Nav.Link>
-          <Nav.Link href='/work'>CV</Nav.Link>
-          <Nav.Link href='/optimization'>Work</Nav.Link>
+          <LinkContainer to='/'>
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/about'>
+            <Nav.Link>About</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to='/work'>
+            <Nav.Link>Work</Nav.Link>
+          </LinkContainer>
           <NavDropdown title='Case Studies' id='basic-nav-dropdown'>
-            <NavDropdown.Item href='/thespreadsheet'>
-              The Spreadsheet
-            </NavDropdown.Item>
-            <NavDropdown.Item href='/automatingreporting'>
-              Automated Reporting
-            </NavDropdown.Item>
+            <LinkContainer to='/thespreadsheet'>
+              <NavDropdown.Item href='/thespreadsheet'>
+                The Spreadsheet
+              </NavDropdown.Item>
+            </LinkContainer>
+            <LinkContainer to='/automatingreporting'>
+              <NavDropdown.Item href='/automatingreporting'>
+                Automated Reporting
+              </NavDropdown.Item>
+            </LinkContainer>
             <NavDropdown.Divider />
-            <NavDropdown.Item href='/theproductlifecycle'>
-              The Product Lifecycle
-            </NavDropdown.Item>
+            <LinkContainer to='/theproductlifecycle'>
+              <NavDropdown.Item href='/theproductlifecycle'>
+                The Product Lifecycle
+              </NavDropdown.Item>
+            </LinkContainer>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>
