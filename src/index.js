@@ -7,12 +7,13 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import './scss/index.scss';
+import getRemotePath from './config';
 
 const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter basename='/k_test_site'>
+    <BrowserRouter basename={getRemotePath()}>
       <App />
     </BrowserRouter>
   </Provider>,
