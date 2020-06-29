@@ -1,11 +1,14 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import getRemotePath from '../config';
+
+const path = getRemotePath();
 
 export default function HeaderNav({ isMobile }) {
   return (
-    <Navbar bg='light' expand='lg'>
-      <Navbar.Brand href='/'>Adam Kecskes</Navbar.Brand>
+    <Navbar bg='light' expand='md'>
+      <Navbar.Brand href={path}>Adam Kecskes</Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
