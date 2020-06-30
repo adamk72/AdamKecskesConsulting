@@ -12,7 +12,7 @@ export default function HeaderNav({ isMobile }) {
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto'>
-          <LinkContainer to='/'>
+          <LinkContainer to='/' exact>
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/about'>
