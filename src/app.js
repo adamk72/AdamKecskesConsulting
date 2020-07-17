@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Homepage from './content/Homepage';
 import About from './content/About';
 import BasicMdPage from './components/BasicMdPage';
-import workPageContent from '../src/content/md_files/WorkExperience.md';
+import resumePageContent from '../src/content/md_files/WorkExperience.md';
 import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
 import automatingreporting from '../src/content/md_files/AutomatingTheReporting.md';
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
@@ -13,12 +13,12 @@ const App = () => {
   return (
     <main>
       <Switch>
+
         <Route path='/' exact component={Homepage} />
         <Route path='/about' exact component={About} />
         <Route
-          path='/work'
-          exact
-          component={() => <BasicMdPage mdContent={workPageContent} />}
+          path='/resume'
+          component={() => <BasicMdPage mdContent={resumePageContent} />}
         />
         <Route
           path='/thoughts'

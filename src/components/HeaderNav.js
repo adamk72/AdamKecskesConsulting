@@ -18,8 +18,8 @@ export default function HeaderNav({ isMobile }) {
           <LinkContainer to='/about'>
             <Nav.Link>About</Nav.Link>
           </LinkContainer>
-          <LinkContainer to='/work'>
-            <Nav.Link>Work</Nav.Link>
+          <LinkContainer to='/resume'>
+            <Nav.Link>Resume</Nav.Link>
           </LinkContainer>
           <NavDropdown title='Case Studies' id='basic-nav-dropdown'>
             <LinkContainer to='/thespreadsheet'>
