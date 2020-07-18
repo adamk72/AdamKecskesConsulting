@@ -21,7 +21,7 @@ const Homepage = () => {
 
             <div className="text-body-display">
               <TextBody className="text-item-1 top-element pb-4" title="My Why:">
-                I've seen too much employee misery. I've seen too many people, myself included, who have had to toil fruitlessly using old tools, opaque systems, and outdated practices. It doesn't have to be that way and I've shown many companies a better way of approaching how they do their operations. <br /><br />
+                I've seen too much employee misery. I've seen too many people, myself included, who have had to toil fruitlessly using old tools, opaque systems, and outdated practices. It doesn't have to be that way and I've shown many companies a better way of approaching how they do their operations.<br /><br />
                 It's my mission is to create workplaces with reduced stress where employees can spend more time with friends and family while <em>still</em> being <em><strong>incredibly productive</strong></em> at work.</TextBody>
 
               <SectionDivider />

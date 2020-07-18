@@ -6,7 +6,7 @@ const Footer = ({ children }) => {
     <>
       <SectionDivider />
       <div id='footer'>
-        <div style={{ padding: '5em 0em' }}>{children}</div>
+        <div style={{ padding: '3em 0em' }}>{children}</div>
       </div>
     </>
   );
