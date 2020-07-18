@@ -37,7 +37,7 @@
   .img-item-1 {
     grid-row-start: 1;
     grid-row-end: span 7;
-    background-image: url('../content/images/tau_ceti_austin_mural_tall.jpg');
+    background-image: url('https://kecskes.net/images/tau_ceti_austin_mural_tall.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -130,7 +130,7 @@
     }
 
     .img-item-1 {
-      background-image: url('../content/images/tau_ceti_austin_mural_tall.jpg');
+      background-image: url('https://kecskes.net/images/tau_ceti_austin_mural_tall.jpg');
       border-radius: 5px;
       grid-row: 1/2;
     }
