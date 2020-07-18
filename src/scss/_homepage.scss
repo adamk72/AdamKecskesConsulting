@@ -1,0 +1,147 @@
+.homepage {
+  .cards-display {
+    display: grid;
+    grid-template-columns: 100px auto;
+    gap: 0.25rem;
+  }
+
+  .text-body .title {
+    font-size: 2.5rem;
+  }
+
+  .cards-display {
+    .top-element {
+      padding-top: 1rem;
+    }
+    .bottom-element {
+      padding-bottom: 2rem;
+    }
+  }
+  .card-title {
+    font-family: 'Roboto Slab';
+  }
+
+  .text-item-1,
+  .text-item-2,
+  .text-item-3 {
+    margin: 1rem;
+  }
+
+  .text-body {
+    font-family: 'Montseratt';
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .img-item-1 {
+    grid-row-start: 1;
+    grid-row-end: span 7;
+    background-image: url('../content/images/tau_ceti_austin_mural_tall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+  }
+  .text-item-1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / 2;
+  }
+  .text-item-2 {
+    grid-column: 2 / span 2;
+    grid-row: 2 / 3;
+  }
+  .text-item-3 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / 4;
+  }
+
+  .text-item-4 {
+    grid-column: 2 / span 2;
+    grid-row: 4 / 5;
+  }
+
+  .card-item-1 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+  }
+
+  .card-item-2 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+  }
+
+  .card-item-3 {
+    grid-column: 2 /3;
+    grid-row: 6 / 7;
+  }
+
+  .card-item-4 {
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+  }
+
+  .text-body {
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .title {
+    font-family: 'Roboto Slab';
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+  @media (max-width: 700px) {
+    .homepage {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 5px;
+      column-gap: 10px;
+    }
+    .img-item-1 {
+      display: none;
+    }
+    .cards-display {
+      grid-template-columns: 0px auto;
+
+      .card-item-1,
+      .card-item-2,
+      .card-item-3,
+      .card-item-4 {
+        grid-column: 2 / 4;
+      }
+      .card-item-1 {
+        grid-row: 7/8;
+      }
+      .card-item-2 {
+        grid-row: 9/10;
+      }
+      .card-item-3 {
+        grid-row: 11/12;
+      }
+      .card-item-4 {
+        grid-row: 13/14;
+      }
+
+      .text-body .title {
+        font-size: 2rem;
+      }
+    }
+
+    .img-item-1 {
+      background-image: url('../content/images/tau_ceti_austin_mural_tall.jpg');
+      border-radius: 5px;
+      grid-row: 1/2;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .card-title {
+      font-size: 2rem;
+    }
+    .text-body .title {
+      font-size: 3rem;
+    }
+  }
+}
