@@ -1,0 +1,27 @@
+.homepage {
+  .outer-grid {
+    display: grid;
+    grid-template-columns: 100px auto;
+  }
+
+  .inner-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.25rem;
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 0.25rem;
+    }
+  }
+  @media (max-width: 700px) {
+    .img-item-1 {
+      display: none;
+    }
+    .outer-grid {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+}
