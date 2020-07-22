@@ -9,7 +9,7 @@ const MainTitle = ({ mobile }) => (
       Adam Kecskes
     </Row>
     <Row className='justify-content-center header sub-title' as='h4'>
-      Specializing in No-Code &amp; Low-code Operations
+      Ethical &amp; Effective Operations
     </Row>
     <Row className='justify-content-center header bottom-item'>
       <SocialList />

@@ -1,4 +1,4 @@
-# Abridged CV
+# Abridged Resume 
 
 ---
 

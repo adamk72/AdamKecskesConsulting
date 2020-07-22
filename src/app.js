@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Homepage from './content/Homepage';
-import About from './content/About';
+import Homepage from './content/WhyAndHowPage';
+import Services from './content/DescriptionPage';
 import BasicMdPage from './components/BasicMdPage';
 import resumePageContent from '../src/content/md_files/WorkExperience.md';
 import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
@@ -14,8 +14,8 @@ const App = () => {
     <main>
       <Switch>
 
-        <Route path='/' exact component={Homepage} />
-        <Route path='/about' exact component={About} />
+        <Route path='/' exact component={Services} />
+        <Route path='/about' exact component={Homepage} />
         <Route
           path='/resume'
           component={() => <BasicMdPage mdContent={resumePageContent} />}

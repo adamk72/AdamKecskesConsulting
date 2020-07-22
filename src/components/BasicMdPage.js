@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ResponsiveContainer from './ResponsiveContainer';
 import Markdown from '../apis/Markdown';
-import LiteTitle from '../content/LiteTitle';
-
+import MainTitle from '../content/MainTitle'
 const BasicMdPage = ({ mdContent }) => {
   const [content, setContent] = useState('');
 
@@ -18,7 +17,7 @@ const BasicMdPage = ({ mdContent }) => {
 
   return (
     <ResponsiveContainer>
-      <LiteTitle />
+      <MainTitle />
       <div className='basic-md-container'>
         <Markdown>{content}</Markdown>
       </div>

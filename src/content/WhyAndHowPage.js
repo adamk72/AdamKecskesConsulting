@@ -22,13 +22,23 @@ const Homepage = () => {
             <div className="text-body-display">
               <TextBody className="text-item-1 top-element pb-4" title="My Why:">
                 I've seen too much employee misery. I've seen too many people, myself included, who have had to toil fruitlessly using old tools, opaque systems, and outdated practices. It doesn't have to be that way and I've shown many companies a better way of approaching how they do their operations.<br /><br />
-                It's my mission is to create workplaces with reduced stress where employees can spend more time with friends and family while <em>still</em> being <em><strong>incredibly productive</strong></em> at work.</TextBody>
+                It's my mission is to create workplaces with reduced stress where employees can spend more time with friends and family while still being <em><strong>incredibly productive</strong></em> at work.</TextBody>
+
+              <SectionDivider />
+
+              <TextBody className="text-item-1 top-element pb-4" title="My What:">
+                Ethical and Effective Operations (EEO) is the concept that companies can and should implement business systems that keep their employees' well-beings front of mind. It's easy to get lost in the daily grind of trying to satisfy the remote shareholders and upper management that is perhaps too far away from the hands on work. Truly productive work is not about working harder or longer hours, but quite the contrary.<br /><br /> It's about extensive planning; minimal, but highly effective execution, and taking the time to enjoy the work being done while not working to the point of drudgery. This is hardly a new concept; most people know it from the concept popularized by Allen F. Morgenstern in the 1930s, with his "work simplification plan." You probably know it better as "work smarter, not harder."
+                <br />
+                <br />
+                I've implemented "work simplification plans" in a variety of operations and project management systems. The best I'd ever done was with a small and tight knit software development team in a start up company. After 6 months of 40 hour work weeks unwinding and refactor process, code, and UX alike, we managed to create a system that generated twice the results in half the time.
+
+               </TextBody>
 
               <SectionDivider />
 
               <TextBody className="text-item-2 pb-4 pt-4" title="My How:">
                 How does a company get <strong><em>twice</em></strong> as much done in <strong><em>half</em></strong> the time? By making a dramatic shift in your mindset about what defines productivity, communication and continual process improvement. <br /> <br />I guide companies <em>away</em> from boring meetings, ever changing dashboards, lost emails, and false priorities and move them towards thinking about culture, categorization, tasks, and sprints.</TextBody>
-
+^
               <SectionDivider />
 
               <TextBody TextBody className="text-item-3 pt-4" title="My Services:">

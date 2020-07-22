@@ -16,7 +16,7 @@ export default function HeaderNav({ isMobile }) {
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/about'>
-            <Nav.Link>About</Nav.Link>
+            <Nav.Link>Services</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/resume'>
             <Nav.Link>Resume</Nav.Link>
