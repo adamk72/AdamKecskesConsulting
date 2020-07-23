@@ -5,16 +5,16 @@ import SocialList from '../components/SocialList';
 
 const MainTitle = ({ mobile }) => (
   <Container className='mainTitle'>
-    <Row className='justify-content-center header title top-item' as='h1'>
+    <Row Row className='justify-content-center header title top-item' as='h1' >
       Adam Kecskes
-    </Row>
+    </Row >
     <Row className='justify-content-center header sub-title' as='h4'>
       Ethical &amp; Effective Operations
     </Row>
     <Row className='justify-content-center header bottom-item'>
       <SocialList />
     </Row>
-  </Container>
+  </Container >
 );
 
 MainTitle.propTypes = {
