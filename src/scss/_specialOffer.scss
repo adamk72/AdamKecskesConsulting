@@ -1,0 +1,27 @@
+.special-offer {
+  display: flex;
+  background-color: #007bff;
+  border-radius: 10px;
+  margin: 2em 0;
+  padding: 2em 1em;
+
+  color: white;
+  .email-label,
+  .call-to-action {
+    font-size: 1.5em;
+    font-family: 'Roboto Slab';
+  }
+  .call-to-action {
+    flex: 3;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  form {
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    input {
+      margin-bottom: 5px;
+    }
+  }
+}

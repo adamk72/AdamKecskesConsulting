@@ -3,7 +3,7 @@ import ResponsiveContainer from '../components/ResponsiveContainer';
 import SectionDivider from '../components/SectionDivider';
 import MainTitle from './MainTitle';
 import TwoColumnSection from '../components/TwoColumnSection';
-
+import GetSpecialOffer from './sections/GetSpecialOffer'
 import { CardImage, CardText } from './sections/IntroInfo';
 import { SolverLeftSide, SolverRightSide } from './sections/SolverInfo';
 import { RoleLeftSide, RoleRightSide } from './sections/RoleInfo';
@@ -12,6 +12,7 @@ import { TeamLeftSide, TeamRightSide } from './sections/TeamInfo';
 const Homepage = () => (
   <ResponsiveContainer>
     <MainTitle />
+    <GetSpecialOffer />
     <SectionDivider content='Who is &hellip; ?' />
     <TwoColumnSection
       leftSide={CardImage}
