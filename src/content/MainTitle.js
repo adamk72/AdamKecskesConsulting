@@ -5,7 +5,7 @@ import SocialList from '../components/SocialList';
 
 const MainTitle = ({ mobile }) => (
   <Container className='mainTitle'>
-    <Row Row className='justify-content-center header title top-item' as='h1' >
+    <Row className='justify-content-center header title top-item' as='h1' >
       Adam Kecskes
     </Row >
     <Row className='justify-content-center header sub-title' as='h4'>
