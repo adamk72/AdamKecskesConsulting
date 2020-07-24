@@ -35,9 +35,9 @@ const GetSpecialOffer = () => {
     return (
 
         <div className="special-offer">
-            <span className="call-to-action">Get my whitepaper on which questions non-coders should be asking their software devs:</span>
+            <div className="call-to-action">Get my paper on which questions non-coders should be asking their software devs:</div>
             <form>
-                <label>Email</label><br />
+                <label>Email</label>
                 <input name="emailInput" placeholder="Enter email" type='email' onChange={(e) => setInput(e.target.value)} />
                 <Button variant="success" onClick={() => handleSubmit()} > Submit</Button>
             </form>

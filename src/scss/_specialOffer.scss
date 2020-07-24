@@ -1,9 +1,8 @@
 .special-offer {
-  display: flex;
   background-color: #007bff;
   border-radius: 10px;
   margin: 2em 0;
-  padding: 2em 1em;
+  padding: 1em 1em;
 
   input[type='email']:not(:placeholder-shown):invalid {
     color: red;
@@ -16,14 +15,17 @@
     font-family: 'Roboto Slab';
   }
   .call-to-action {
-    flex: 3;
-    align-items: center;
-    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 1rem;
   }
   form {
-    flex: 1;
-    align-items: center;
-    justify-content: flex-end;
+    text-align: center;
+    label {
+      margin-right: 10px;
+    }
+    button {
+      margin-left: 10px;
+    }
     input {
       margin-bottom: 5px;
     }
