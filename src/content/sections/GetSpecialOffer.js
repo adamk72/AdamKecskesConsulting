@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap'
-// import { GrDocumentDownload } from 'react-icons/gr'
 
 const GetSpecialOffer = () => {
     const [input, setInput] = useState('')
-    const [output, setOutput] = useState('')
+    const [submit, setSubmit] = useState(false)
 
     const handleSubmit = (e) => {
-        sendEmail(callback);
-    }
-    const callback = () => {
-        return output
+        setSubmit(true)
+        sendEmail();
     }
 
-    const sendEmail = (cb) => {
+    const sendEmail = () => {
         const options = {
             headers: {
                 'Accept': 'application/json',
@@ -23,25 +20,24 @@ const GetSpecialOffer = () => {
             // body: JSON.stringify({ })
         };
 
-        fetch('http://localhost:5000/test', options)
-            .then(res => res.json())
-            .then(json => { setOutput({ name: json.name, id: json.id }) })
-        console.log(output)
-
-
+        fetch('http://localhost:5000/nodemailer', options)
+            .catch((error) => console.log(error.message))
         return;
     }
 
     return (
 
         <div className="special-offer">
-            <div className="call-to-action">Get my paper on which questions non-coders should be asking their software devs:</div>
-            <form>
-                <label>Email</label>
-                <input name="emailInput" placeholder="Enter email" type='email' onChange={(e) => setInput(e.target.value)} />
-                <Button variant="success" onClick={() => handleSubmit()} > Submit</Button>
-            </form>
-            <p>{output.name}</p>
+            {submit ? <p className="call-to-action">Thanks! You will be receiving an email with a link shortly.</p>
+
+                : <div> <p className="call-to-action">Get my paper on which questions non-coders should be asking their software devs:</p>
+                    <form>
+                        <label>Email</label>
+                        <input name="emailInput" placeholder="Enter email" type='email' onChange={(e) => setInput(e.target.value)} />
+                        <Button variant="success" onClick={() => handleSubmit()} > Submit</Button>
+                    </form>
+                </div>
+            }
 
         </div>
     )
