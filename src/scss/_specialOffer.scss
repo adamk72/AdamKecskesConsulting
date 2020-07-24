@@ -5,6 +5,10 @@
   margin: 2em 0;
   padding: 2em 1em;
 
+  input[type='email']:not(:placeholder-shown):invalid {
+    color: red;
+  }
+
   color: white;
   .email-label,
   .call-to-action {

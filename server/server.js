@@ -4,14 +4,17 @@ const path = require('path');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 require('dotenv').config()
+var cors = require('cors')
 
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const nodemailerRouter = require('./routes/nodemailer');
-const testRouter = require('./routes/test');
+const testRouter = require('./routes/api/test');
 
 const app = express();
+app.use(cors())
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
