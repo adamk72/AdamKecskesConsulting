@@ -29,10 +29,8 @@ router.post('/', function (req, res, next) {
             html: "<b>Hello world?</b>", // html body
         }, (error, info) => {
             if (error) {
-                console.log("ERROR:", error);
                 res.status(400).json({ status: '400' })
             } else {
-                console.log('Message sent: %s', info.messageId);
                 res.status(200).json({ status: 'OK' })
             }
         });
