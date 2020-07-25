@@ -8,18 +8,21 @@ const GetSpecialOffer = () => {
 
     const sendEmail = () => {
         setSubmit(true)
+
         const options = {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'X-Email': { email }
             },
             method: 'POST',
-            // body: JSON.stringify({ })
+            body: JSON.stringify({ email }
+            )
         };
 
         fetch('http://localhost:5000/nodemailer', options)
-            .catch((error) => console.log(error.message))
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch((error) => console.log("error: ", error.message))
         return;
     }
 

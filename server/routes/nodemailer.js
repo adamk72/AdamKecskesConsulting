@@ -4,9 +4,11 @@ require('dotenv').config()
 const nodemailer = require('nodemailer')
 
 /* GET users listing. */
-router.get('/', function (req, res, next) {
+router.post('/', function (req, res, next) {
+    // console.log(res.headersSent, req.body)
+    const { email } = req.body
     try {
-        main()
+        main(email)
         res.status(200).json({ status: 'OK' })
     } catch (error) {
         console.error(error.statusCode)
@@ -17,7 +19,7 @@ router.get('/', function (req, res, next) {
 
 
 // async..await is not allowed in global scope, must use a wrapper
-async function main() {
+async function main(email) {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
@@ -33,7 +35,7 @@ async function main() {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: '"Adam Kecskes Consulting" <consulting@kecskes.net>', // sender address
-        to: "adam@kecskes.net", // list of receivers
+        to: `${email}`, // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
         html: "<b>Hello world?</b>", // html body
