@@ -5,7 +5,12 @@ const nodemailer = require('nodemailer')
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
-    main()
+    try {
+        main()
+    } catch (error) {
+        console.error(error.message)
+
+    }
     res.send('test')
 });
 
@@ -16,19 +21,19 @@ async function main() {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
+        host: process.env.SMTP_HOST,
         port: 587,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: process.env.ETHEREAL_LOGIN,
-            pass: process.env.ETHEREAL_PASSWORD
+            user: process.env.SMTP_LOGIN,
+            pass: process.env.SMTP_PASSWORD
         },
     });
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
-        to: "bar@example.com, baz@example.com", // list of receivers
+        from: '"Adam Kecskes Consulting" <consulting@kecskes.net>', // sender address
+        to: "adam@kecskes.net", // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
         html: "<b>Hello world?</b>", // html body
