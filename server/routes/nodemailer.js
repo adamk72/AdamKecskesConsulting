@@ -7,13 +7,13 @@ const nodemailer = require('nodemailer')
 router.get('/', function (req, res, next) {
     try {
         main()
+        res.status(200).json({ status: 'OK' })
     } catch (error) {
-        console.error(error.message)
-
+        console.error(error.statusCode)
     }
-    res.send('test')
-});
 
+
+});
 
 
 // async..await is not allowed in global scope, must use a wrapper

@@ -2,21 +2,19 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap'
 
 const GetSpecialOffer = () => {
-    const [input, setInput] = useState('')
+    const [email, setEmail] = useState('')
     const [submit, setSubmit] = useState(false)
 
-    const handleSubmit = (e) => {
-        setSubmit(true)
-        sendEmail();
-    }
 
     const sendEmail = () => {
+        setSubmit(true)
         const options = {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
+                'X-Email': { email }
             },
-            method: 'GET',
+            method: 'POST',
             // body: JSON.stringify({ })
         };
 
@@ -33,8 +31,8 @@ const GetSpecialOffer = () => {
                 : <div> <p className="call-to-action">Get my paper on which questions non-coders should be asking their software devs:</p>
                     <form>
                         <label>Email</label>
-                        <input name="emailInput" placeholder="Enter email" type='email' onChange={(e) => setInput(e.target.value)} />
-                        <Button variant="success" onClick={() => handleSubmit()} > Submit</Button>
+                        <input name="emailInput" placeholder="Enter email" type='email' onChange={(e) => setEmail(e.target.value)} />
+                        <Button variant="success" onClick={() => sendEmail()} > Submit</Button>
                     </form>
                 </div>
             }
