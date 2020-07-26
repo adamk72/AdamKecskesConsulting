@@ -9,7 +9,6 @@ router.post('/', function (req, res, next) {
     const { email } = req.body
     sendMail(email)
 
-    // async..await is not allowed in global scope, must use a 
     function sendMail(email) {
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
@@ -26,7 +25,7 @@ router.post('/', function (req, res, next) {
             to: `${email}`, // list of receivers
             subject: "Hello ✔", // Subject line
             text: "Hello world?", // plain text body
-            html: "<b>Hello world?</b>", // html body
+            html: "<b>Hello world?</b><br/><a href='http://localhost:3000/files/Consulting_Questions.pdf'>Download</a>", // html body
         }, (error, info) => {
             if (error) {
                 res.status(400).json({ status: '400' })
