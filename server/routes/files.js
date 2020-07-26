@@ -13,7 +13,6 @@ router.get('/', function (req, res, next) {
                 console.log("Headers sent")
             } else {
                 console.log("error: ", error.statusCode)
-                res.sendStatus(error.statusCode)
             }
         }
     });

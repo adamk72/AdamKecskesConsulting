@@ -11,30 +11,31 @@ const FileDownloadPage = ({ history, match: { params: { id, file } } }) => {
     const [needToLoad, setNeedToLoad] = useState(true)
 
     useEffect(() => {
-        let hashEmail = localStorage.getItem('hashEmail')
-        if (hashEmail === id) {
-            if (needToLoad) {
+        if (needToLoad) {
+            let hashEmail = localStorage.getItem('hashEmail')
+            if (hashEmail === id) {
                 getFile(file, (res) => setFileState(res))
                 setNeedToLoad(false)
-                setTimeout(() => {
-                    history.push('/')
-                }, 30000);
+            } else {
+                setRenderText("Sorry, we don't recognize this device. Did you try and sign up for the download on another computer?")
             }
-        } else {
-            setRenderText("Sorry, we don't recognize this device. Did you try and sign up for the download on another computer?")
         }
 
-        if (fileState === 200) {
-            setRenderText("If you have an questions or comments, feel free to send me an email. I'll be redirecting you to the home page in a few moments.")
-        } else if (fileState === 404) {
-            setRenderText("Looks like there was a network error. Please try again later. Feel free to send me an email if you have an questions.")
+        if (fileState > 0) {
+            if (fileState === 200) {
+                setRenderText("If you have an questions or comments, feel free to send me an email. I'll be redirecting you to the home page in a few moments.")
+            } else if (fileState === 404) {
+                setRenderText("Looks like there was a network error. Please try again later. Feel free to send me an email if you have an questions.")
+            }
+            setTimeout(() => {
+                history.push('/')
+            }, 8000);
         }
     }, [id, file, needToLoad, history, fileState])
 
     return (
         <ResponsiveContainer>
             <LiteTitle />
-            <strong>Filestate: {fileState}</strong>
             <div className="file-dl-page">
                 {fileState === 200 ?
                     <div className="success"><h1>Enjoy reading!</h1><Alert variant="success">{renderText}</Alert></div>
