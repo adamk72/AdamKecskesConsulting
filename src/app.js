@@ -8,7 +8,7 @@ import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
 import automatingreporting from '../src/content/md_files/AutomatingTheReporting.md';
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
-import FilesHandler from './components/FilesHandler'
+import FileDownloadPage from './content/FileDownloadPage'
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
 
         <Route path='/' exact component={Services} />
         <Route path='/about' exact component={Homepage} />
-        <Route path='/files/:id/:file' exact component={FilesHandler} />
+        <Route path='/files/:id/:file' component={FileDownloadPage} />
         <Route
           path='/resume'
           component={() => <BasicMdPage mdContent={resumePageContent} />}

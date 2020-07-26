@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-var path = require('path');
 var mime = require('mime');
 
 /* GET home page. */
