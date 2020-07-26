@@ -28,28 +28,28 @@ const FilesHandler = ({ match: { params } }) => {
                 if (response.statusText === 'OK') {
                     response.blob();
                     setExitMsg(<p className="call-to-action">Thanks! You will be receiving an email with a link shortly.</p>)
+                } else {
+                    throw Error(response.statusText)
                 }
             }
             )
             .then(blob => {
                 // 1. check for blob
-                if (blob) {
-                    // 2. Create blob link to download
-                    const url = window.URL.createObjectURL(new Blob([blob]));
-                    const link = document.createElement('a');
-                    link.href = url;
-                    link.setAttribute('download', `${params.file}`);
-                    // 3. Append to html page
-                    document.body.appendChild(link);
-                    // 4. Force download
-                    link.click();
-                    // 5. Clean up and remove the link
-                    link.parentNode.removeChild(link);
-                }
+                // 2. Create blob link to download
+                const url = window.URL.createObjectURL(new Blob([blob]));
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', `${params.file}`);
+                // 3. Append to html page
+                document.body.appendChild(link);
+                // 4. Force download
+                link.click();
+                // 5. Clean up and remove the link
+                link.parentNode.removeChild(link);
                 setLoading(false)
             })
             .catch((error) => {
-                console.log("error: ", error.message);
+                setExitMsg(<p className="call-to-action">Had a problem wth the network</p>)
             })
     }
 
