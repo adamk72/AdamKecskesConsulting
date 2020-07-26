@@ -10,7 +10,7 @@ var cors = require('cors')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const nodemailerRouter = require('./routes/nodemailer');
-const testRouter = require('./routes/api/test');
+const filesRouter = require('./routes/files')
 
 const app = express();
 app.use(cors())
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/nodemailer', nodemailerRouter);
-app.use('/test', testRouter);
+app.use('/files', filesRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

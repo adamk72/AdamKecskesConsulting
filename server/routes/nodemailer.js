@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 require('dotenv').config()
 const nodemailer = require('nodemailer')
+const md5 = require('md5')
 
 /* GET users listing. */
 router.post('/', function (req, res, next) {
@@ -10,6 +11,7 @@ router.post('/', function (req, res, next) {
     sendMail(email)
 
     function sendMail(email) {
+        let md5email = md5(email)
         const transporter = nodemailer.createTransport({
             host: process.env.SMTP_HOST,
             port: 587,
@@ -25,7 +27,7 @@ router.post('/', function (req, res, next) {
             to: `${email}`, // list of receivers
             subject: "Hello ✔", // Subject line
             text: "Hello world?", // plain text body
-            html: "<b>Hello world?</b><br/><a href='http://localhost:3000/files/Consulting_Questions.pdf'>Download</a>", // html body
+            html: `<b>Hello world?</b><br/><a href='http://localhost:3000/files?_id=${md5email}&_file='Consulting_Questions.pdf'>Download</a>`, // html body
         }, (error, info) => {
             if (error) {
                 res.status(400).json({ status: '400' })

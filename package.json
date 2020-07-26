@@ -10,6 +10,7 @@
     "classnames": "^2.2.6",
     "jquery": "^3.5.1",
     "markdown-to-jsx": "^6.11.4",
+    "md5": "^2.2.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",

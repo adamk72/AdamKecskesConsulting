@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap'
+import md5 from 'md5'
 
 const GetSpecialOffer = () => {
     const initialExitMsg = <p className="call-to-action">Something went wrong with the delivery attempt. Please try again in a short while.</p>
@@ -10,6 +11,7 @@ const GetSpecialOffer = () => {
 
     const sendEmail = () => {
         setSubmit(true)
+        localStorage.setItem('hashEmail', md5(email))
 
         const options = {
             headers: {
