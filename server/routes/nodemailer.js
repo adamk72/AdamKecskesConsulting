@@ -6,7 +6,6 @@ const md5 = require('md5')
 
 /* GET users listing. */
 router.post('/', function (req, res, next) {
-    // console.log(res.headersSent, req.body)
     const { email } = req.body
     sendMail(email)
 
