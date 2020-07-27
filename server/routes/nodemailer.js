@@ -20,7 +20,6 @@ router.post('/', function (req, res, next) {
                 pass: process.env.SMTP_PASSWORD
             },
         });
-        // http://localhost:3000/#/files/c8ff581e1ec23af7c5eaeac5b178bb7d/Consulting_Questions.pdf
         const link = `http://localhost:3000/#/files/${md5email}/Consulting_Questions.pdf`
         // send mail with defined transport object
         transporter.sendMail({
