@@ -5,7 +5,6 @@ import LiteTitle from './LiteTitle';
 import { Alert } from 'react-bootstrap'
 
 const FileDownloadPage = ({ history, match: { params: { id, file } } }) => {
-    // http://localhost:3000/#/files/c8ff581e1ec23af7c5eaeac5b178bb7d/Consulting_Questions.pdf
     const [renderText, setRenderText] = useState(null)
     const [fileState, setFileState] = useState(0)
     const [needToLoad, setNeedToLoad] = useState(true)

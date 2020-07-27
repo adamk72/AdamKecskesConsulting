@@ -3,11 +3,9 @@ import { Button } from 'react-bootstrap'
 import md5 from 'md5'
 
 const GetSpecialOffer = () => {
-    const initialExitMsg = <p className="call-to-action">Something went wrong with the delivery attempt. Please try again in a short while.</p>
-
     const [email, setEmail] = useState('')
     const [submit, setSubmit] = useState(false)
-    const [exitMsg, setExitMsg] = useState(initialExitMsg)
+    const [exitMsg, setExitMsg] = useState(<p>Just a moment please...</p>)
 
     const sendEmail = () => {
         setSubmit(true)
@@ -28,6 +26,8 @@ const GetSpecialOffer = () => {
             .then(data => {
                 if (data.status === 'OK') {
                     setExitMsg(<p className="call-to-action">Thanks! You will be receiving an email with a link shortly.</p>)
+                } else {
+                    setExitMsg(<p className="call-to-action">Something went wrong with the delivery attempt. Please try again in a short while.</p>)
                 }
             })
             .catch((error) => { console.log("error: ", error.message); })
