@@ -12,7 +12,7 @@ import { TeamLeftSide, TeamRightSide } from './sections/TeamInfo';
 const Homepage = () => (
   <ResponsiveContainer>
     <MainTitle />
-    <GetSpecialOffer />
+    {/* <GetSpecialOffer /> */}
     <SectionDivider content='Who is &hellip; ?' />
     <TwoColumnSection
       leftSide={CardImage}
