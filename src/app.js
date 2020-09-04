@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import Homepage from './content/WhyAndHowPage';
 import Services from './content/DescriptionPage';
 import BasicMdPage from './components/BasicMdPage';
@@ -38,6 +38,7 @@ const App = () => {
           path='/theproductlifecycle'
           component={() => <BasicMdPage mdContent={theproductlifecycle} />}
         />
+
       </Switch>
     </main>
   );
