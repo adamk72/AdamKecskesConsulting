@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SocialList from '../components/SocialList';
 
-const LiteTitle = ({ mobile }) => (
+const LiteTitle = ({ mobile, title = "Adam Kecskes", showSocialList = true }) => (
   <div className='liteTitle'>
-    <h1>Adam Kecskes</h1>
-    <SocialList />
+    <h1>{title}</h1>
+    {showSocialList ?
+      <SocialList /> : null}
   </div>
 );
 

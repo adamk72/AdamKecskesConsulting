@@ -39,6 +39,9 @@ export default function HeaderNav({ isMobile }) {
               </NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
+          <LinkContainer to='/projectshare' exact>
+            <Nav.Link>Project Share</Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

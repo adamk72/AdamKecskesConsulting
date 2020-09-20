@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Homepage from './content/WhyAndHowPage';
 import Services from './content/DescriptionPage';
 import BasicMdPage from './components/BasicMdPage';
@@ -9,6 +9,7 @@ import automatingreporting from '../src/content/md_files/AutomatingTheReporting.
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
 import FileDownloadPage from './content/FileDownloadPage'
+import ProjectShare from './content/ProjectShare'
 
 const App = () => {
   return (
@@ -18,6 +19,8 @@ const App = () => {
         <Route path='/' exact component={Services} />
         <Route path='/about' exact component={Homepage} />
         <Route path='/files/:id/:file' component={FileDownloadPage} />
+        <Route path="/projectshare" component={ProjectShare}
+        />
         <Route
           path='/resume'
           component={() => <BasicMdPage mdContent={resumePageContent} />}
