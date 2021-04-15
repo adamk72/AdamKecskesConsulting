@@ -2,6 +2,29 @@
 
 ---
 
+## CESCO Magnetics ~ Food Safety Product Manufacturing 
+
+### ERP Solutions Consultant
+
+Dec 2020 – Present @ _Georgetown, TX_
+
+- Implementing inventory migration program from spreadsheets and Access to Global Shop Solutions ERP.
+- Eliminate tedious steps in quality assurance certification process.
+- Provide data analysis of various business functions including inventory tracking, order processing, and manufacturing steps. 
+
+---
+
+## Axon Collective ~ Technical Consulting 
+
+### Process Improvement and React Frontend Development
+
+Apr 2020 – Present @ _Austin, TX_
+
+- Provide project operations and management services.
+- Provide Javascript/React, Node, and Django software development services.
+
+---
+
 ## Digital Turbine ~ Mobile Application Marketing
 
 ### Director of IT and Business Operations Manager
@@ -11,7 +34,6 @@ Oct 2014 – March 2015 @ _Austin, TX_
 - Found and solved many weak process points through root cause analysis; provided technical risk reviews for cloud and client services.
 - Managed transition of the company’s primary product from IPv4 systems to support IPv6 on Amazon AWS EC2 & ELB instances.
 - Automated the generation of product performance reports, reducing processing time from hours to minutes and providing deeper report details.
-- A strategic shift in the company transferred the position to an offshore office.
 
 ---
 
@@ -31,7 +53,7 @@ Aug 2011 – Oct 2014 @ _Hillsboro, OR_
 
 ### VP of Software Development & IT Operations
 
-Dec 2005 - Sep 2010 _San Diego, CA_
+Dec 2005 - Sep 2010 @ _San Diego, CA_
 
 - Improved client-server connection by eliminating a number of laborious manual steps; a detailed performance analysis of software, systems, and user experience led to an extensive refactoring program that automated many processes, freeing up time for content creators and software developers alike.
 - Increased revenue by optimizing the software development build cycle, creating quick product turnarounds and more sales opportunities.
@@ -43,7 +65,7 @@ Dec 2005 - Sep 2010 _San Diego, CA_
 
 ### Sr. Software Engineer Lead
 
-Feb 2003 - Dec 2005 _San Diego, CA_
+Feb 2003 - Dec 2005 @ _San Diego, CA_
 
 - Developed reusable UI main screen and menu systems in C and C++ for features phones; involved design team to ensure future roadmap compliance.
 - Provided detailed analyses of build times and the impact on productivity; used results to pinpoint key areas to reduce raw build from 4 hours to 30 minutes through code refactoring and dependency fixes.
@@ -56,7 +78,7 @@ Feb 2003 - Dec 2005 _San Diego, CA_
 
 ### Software Engineer, Program Manager, Sales Engineering, Customer Care Tech Lead
 
-Feb 1997 - Feb 2003 _San Diego, CA_
+Feb 1997 - Feb 2003 @ _San Diego, CA_
 
 - Developed UI for Palm based smartphone line, coding in C and Palm’s APIs.
 - Created a program for a full-scale, iterative product life cycle, replacing the legacy ad-hoc, semi-waterfall system, by working with partners from customer care, human factors, quality assurance, software development, and manufacturing to ensure company wide acceptance and implementation.
@@ -68,7 +90,7 @@ Feb 1997 - Feb 2003 _San Diego, CA_
 
 ### Customer Support Lead
 
-Mar 1996 - Feb 1997 _San Diego, CA_
+Mar 1996 - Feb 1997 @ _San Diego, CA_
 
 - Managed customer support team.
 - Created training courses for new customer support employees.
@@ -80,7 +102,8 @@ Mar 1996 - Feb 1997 _San Diego, CA_
 
 ## Current Technical Status
 
-- Focused on MongoDB/Express/React/Node.js web stack via online courses like Udemy and FreeCodeCamp.
+- Certified Professional Scrum Master
+- Focused on MongoDB/Express/React/Node.js/Django web stack via online courses like Udemy and FreeCodeCamp.
 - Udemy courses take (over 160 hours of training time):
   -- Advanced React and Redux; Modern React with Redux; The Complete React Native + Hooks Course; The Complete 2020 Web Development Bootcamp
 

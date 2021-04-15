@@ -16,7 +16,7 @@ export default function HeaderNav({ isMobile }) {
             <Nav.Link>Home</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/about'>
-            <Nav.Link>Services</Nav.Link>
+            <Nav.Link>About</Nav.Link>
           </LinkContainer>
           <LinkContainer to='/resume'>
             <Nav.Link>Resume</Nav.Link>
@@ -39,9 +39,9 @@ export default function HeaderNav({ isMobile }) {
               </NavDropdown.Item>
             </LinkContainer>
           </NavDropdown>
-          <LinkContainer to='/projectshare' exact>
+          {/* <LinkContainer to='/projectshare' exact>
             <Nav.Link>Project Share</Nav.Link>
-          </LinkContainer>
+          </LinkContainer> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

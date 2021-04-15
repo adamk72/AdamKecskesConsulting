@@ -6,7 +6,7 @@ const techDomains = [
   { key: 1, text: 'Server & Client Agile Software Development' },
   { key: 3, text: 'UX/UI Design Implementation' },
   { key: 2, text: 'Product Development Lifecycle' },
-  { key: 9, text: 'Information Archiecture' },
+  { key: 9, text: 'Information Architecture' },
   { key: 7, text: 'Quality Assurance' },
 ];
 
@@ -27,7 +27,7 @@ export const RoleRightSide = {
         <p>
           I've worked for 3 large cap companies and 3 startup companies all at
           various stages of maturity,&nbsp;&nbsp;giving me a broad scope of
-          business opportunites to learn from.
+          business opportunities to learn from.
         </p>
         <p>Some of the domains I've worked in:</p>
       </SimpleCard>

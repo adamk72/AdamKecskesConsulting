@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Homepage from './content/WhyAndHowPage';
-import Services from './content/DescriptionPage';
+import Homepage from './content/IntroAndDualServices.js';
+import About from './content/DescriptionPage';
 import BasicMdPage from './components/BasicMdPage';
 import resumePageContent from '../src/content/md_files/WorkExperience.md';
 import thespreadsheet from '../src/content/md_files/TheSpreadsheet.md';
@@ -9,18 +9,16 @@ import automatingreporting from '../src/content/md_files/AutomatingTheReporting.
 import theproductlifecycle from '../src/content/md_files/TheProductLifeCycle.md';
 import philosophyPageContent from '../src/content/md_files/Philosophy.md';
 import FileDownloadPage from './content/FileDownloadPage'
-import ProjectShare from './content/ProjectShare'
 
 const App = () => {
   return (
     <main>
       <Switch>
 
-        <Route path='/' exact component={Services} />
-        <Route path='/about' exact component={Homepage} />
+        <Route path='/' exact component={Homepage} />
+        <Route path='/about' exact component={About} />
         <Route path='/files/:id/:file' component={FileDownloadPage} />
-        <Route path="/projectshare" component={ProjectShare}
-        />
+        {/* <Route path="/projectshare" component={ProjectShare} */}
         <Route
           path='/resume'
           component={() => <BasicMdPage mdContent={resumePageContent} />}
